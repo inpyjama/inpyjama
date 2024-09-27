@@ -2,14 +2,17 @@ enabled: true
 id: "hero"
 
 content:
-  title: "How to **level up** your business"
-  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est faucibus tellus leo non pellentesque lorem vel. Arcu magna eros, potenti duis."
+  title: "Learning **Embedded** Systems!"
+  text: "We at inpyjama are on a mission to lowering ’the barrier’ to learning Embedded Systems. With almost a decade of experience working on lower level software (and hardware) deployed on Embedded Systems, we have insights into what works, what doesn’t and how to deal with the complex systems.\n\n
+  **There is a way to look at things**. Once you know that - the complexity disappears! We intend to teach such insights so you can excel at Embedded Software Engineering.\n\n
+  We started off with writing a book (**C Ninja, in Pyjama!**) that guides the reader from very basics of how CPUs work to outputting **\"Hello, world\"** on the UART. While the book is still a work in progress, the public draft is available for a read.\n\n
+  Writing a book takes a lot of effort, so, we decided to also release pre-recorded courses to share everything we know about Embedded Systems Software Engineering."
 
   buttonPrimary:
-    label: "How we work"
-    url: "#"
+    label: "Explore Courses"
+    url: "https://engineers.inpyjama.com/learn"
 
   buttonSecondary:
-    label: "Let's talk"
-    url: ""
+    label: "Signup for Newsletter"
+    url: "https://sendfox.com/inpyjama"
 

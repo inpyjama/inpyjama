@@ -2,66 +2,67 @@ baseURL: "https://www.example.com/"
 theme: "up-business-theme"
 languageCode: "en-us"
 
-title: "Up Business"
+title: "inPyjama!"
 
 # googleAnalytics: ""
 
 summaryLength: 20
 
 params:
-  title: "Up Business"
-  description: "We specialize in providing services to desing websites, applications, build and maintain business for customers."
-  images: 
+  title: "inPyjama!"
+  description: "Everything is simple if you know how to look at it!"
+  images:
     - "images/hero-image.png"
 
-  logo: "arrow-up.png"
+  logo: "logo.png"
 
   favicons:
-    themeColor: "#FFFFFF"
+    themeColor: "#f85f73"
     backgroundColor: "#FFFFFF"
     faviconColor: "#000000"
 
   social:
     dribbble: "#"
-    instagram: "#"
-    facebook: "#"
-    twitter: "#"
 
   location:
-    - "3891 Ranchview Dr. Richardson, California 62639"
-    - "4517 Washington Ave. Manchester, Kentucky 39495"
+    - "Keerthi Harmony, Raghevendra Circle, Bangalore - 560016"
 
   contact:
-    - "trungkienspktnd@gamail.com"
-    - "207.555.0119"
+    - "support@inpyjama.com"
+    - "business@inpyjama.com"
+    - "+91-8197611671"
 
-  copyright: "© 2022 Up Business All Rights Reserved"
+  copyright: "© 2024 Typobrahe Education LLP. All Rights Reserved."
 
 menus:
   main:
     - name: "Home"
-      url: "/#hero"
+      url: "/"
       weight: 1
 
-    - name: "How we work"
-      url: "/#"
+    - name: "Courses"
+      url: "https://engineers.inpyjama.com/learn"
       weight: 2
-
-    - name: "Our team"
-      url: "/#"
-      weight: 3
-
-    - name: "Pricing"
-      url: "/#"
-      weight: 4
 
     - name: "Blog"
       url: "/blog"
+      weight: 3
+
+    - name: "YouTube"
+      url: ""
+      weight: 4
+
+    - name: "Discord"
+      url: ""
+      weight: 5
+
+    - name: "Whatsapp"
+      url: ""
       weight: 5
 
   buttons:
-    - name: "Book a call"
-      url: "/#"
+    - name: "Login"
+      url: "https://engineers.inpyjama.com/learn/account/signin"
       weight: 5
       pre: "btn btn-primary text-light"
 
@@ -70,8 +71,8 @@ menus:
       url: "/#hero"
       weight: 1
 
-    - name: "How we work"
-      url: "/#"
+    - name: "Blog"
+      url: "/blog"
       weight: 2
 
     - name: "Our team"
@@ -83,7 +84,7 @@ menus:
       weight: 4
 
     - name: "Blog"
-      url: "/blog"
+      url: "/"
       weight: 5
 
 taxonomies:
