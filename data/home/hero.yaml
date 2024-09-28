@@ -2,11 +2,13 @@ enabled: true
 id: "hero"
 
 content:
-  title: "Learning **Embedded** Systems!"
-  text: "We at inpyjama are on a mission to lowering ’the barrier’ to learning Embedded Systems. With almost a decade of experience working on lower level software (and hardware) deployed on Embedded Systems, we have insights into what works, what doesn’t and how to deal with the complex systems.\n\n
-  **There is a way to look at things**. Once you know that - the complexity disappears! We intend to teach such insights so you can excel at Embedded Software Engineering.\n\n
-  We started off with writing a book (**C Ninja, in Pyjama!**) that guides the reader from very basics of how CPUs work to outputting **\"Hello, world\"** on the UART. While the book is still a work in progress, the public draft is available for a read.\n\n
-  Writing a book takes a lot of effort, so, we decided to also release pre-recorded courses to share everything we know about Embedded Systems Software Engineering."
+  title: "**Embedded Systems**, inPyjama!"
+  text: "Someone at the Coffee table at work mentioned that learnings Embedded Systems involved a steep learning curve! That's it! We took the challenge on and are on a mission to **lowering the barrier to learning Embedded Systems!**\n\n
+  We believe everything is **easy** if you know how to look at it.\n\n
+
+  We create and curate content that will help you learn Embedded Systems with ease. Doesn't matter if you are a Student, Professional, Enthusiast, or Hacker. We have you covered!\n\n
+
+  We'll teach you the under the hood **Lower Level** stuff that you need to control the World!"
 
   buttonPrimary:
     label: "Explore Courses"

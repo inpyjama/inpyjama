@@ -39,29 +39,24 @@ menus:
     - name: "Home"
       url: "/"
       weight: 1
-
-    - name: "Courses"
-      url: "https://engineers.inpyjama.com/learn"
-      weight: 2
-
     - name: "Blog"
-      url: "/blog"
-      weight: 3
-
+      url: "https://blog.inpyjama.com"
+      weight: 2
     - name: "YouTube"
       url: ""
-      weight: 4
-
+      weight: 3
     - name: "Discord"
       url: ""
-      weight: 5
-
+      weight: 4
     - name: "Whatsapp"
       url: ""
       weight: 5
+    - name: "Courses"
+      url: "https://engineers.inpyjama.com/learn"
+      weight: 6
 
   buttons:
-    - name: "Login"
+    - name: "Course Login"
       url: "https://engineers.inpyjama.com/learn/account/signin"
       weight: 5
       pre: "btn btn-primary text-light"
