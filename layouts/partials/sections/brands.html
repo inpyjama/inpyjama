@@ -1,9 +1,18 @@
-<section class="section brands py-5">
+<section class="section brands py-3">
   <div class="container">
     <div class="row">
       {{ with .content.title }}
         <div class="col-12">
-          <h3 class="fs-5 fw-semibold text-primary text-center pb-4">{{ . }}</h3>
+          <h2 class="fw-semibold text-primary text-center pb-4">{{ . }}</h2>
+        </div>
+      {{ end }}
+    </div>
+    <div class="row">
+      {{ with .content.description }}
+        <div class="col-12">
+          <p class="text-center pb-4">
+            {{ . }}
+          </p>
         </div>
       {{ end }}
     </div>

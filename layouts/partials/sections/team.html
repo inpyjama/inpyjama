@@ -1,0 +1,51 @@
+<section class="section team py-3">
+  <div class="container">
+    <!-- Title -->
+    <div class="row">
+      {{ with .content.title }}
+      <h1 class="fw-bold text-primary text-center pb-4">{{ . | markdownify }}</h1>
+    {{ end }}
+    </div>
+
+    <!-- Description and Team photo -->
+    <div class="row flex-column flex-xl-row-reverse">
+      <div class="col-12 col-xl-6  d-flex flex-column justify-content-center hero-image">
+        {{ with .content.image1 }}{{ partial "utilities/image-fluid.html" . }}{{ end }}
+      </div>
+      <div class="col-12 col-xl-6 d-flex flex-column justify-content-center">
+        {{ with .content.text1 }}
+          <p class="text-center text-xl-start pb-4">{{ . | markdownify }}</p>
+        {{ end }}
+        <div class="d-flex flex-column flex-xl-row">
+          {{ with .content.buttonPrimary }}
+            <a class="btn btn-primary text-light px-4 my-1" href="{{ .url }}">{{ .label }}</a>
+          {{ end }}
+          {{ with .content.buttonSecondary }}
+            <a class="btn btn-outline-primary px-4 my-1 ms-xl-4" href="{{ .url }}">{{ .label }}<span class="ms-2">{{ partial "icons/arrow-right.html" }}</span></a>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+
+    <div class="row flex-column flex-xl-row-reverse">
+        {{ with .content.text2 }}
+          <p class="text-center p-4">{{ . | markdownify }}</p>
+        {{ end }}
+    </div>
+
+    <!-- Companies we worked for -->
+    <div class="row align-items-center justify-content-center">
+      {{ range .content.items }}
+      <div class="col px-3 my-2 text-center">
+        {{ partial "utilities/image-third.html" . }}
+      </div>
+      {{ end }}
+    </div>
+
+    <div class="row flex-column flex-xl-row-reverse">
+      {{ with .content.text3 }}
+        <p class="text-center pt-4">{{ . | markdownify }}</p>
+      {{ end }}
+    </div>
+  </div>
+</section>

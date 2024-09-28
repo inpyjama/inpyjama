@@ -1,0 +1,37 @@
+enabled: true
+id: "team"
+
+content:
+  title: "The Team!"
+  image1: "images/team.png"
+  text1: "We are a bunch of Embedded Systems Engineers with a decade of experience working in the Semiconductor Industry. \n\n
+
+  We have had the good fortune of witnessing the entire Embedded systems development journey - From SoCs design to running Linux on it. Right from **BootRom** to the **Linux Kernel Drivers** (and beyond) development - **We have seen it all!** \n\n
+
+  We precisely know what works and what doesn't, which skills are useful and which just feel useful... **inPyjama** is our effort to lowering the barrier to learning Embedded Systems and help learners focus on what really matters in the Industry and in real life!"
+
+  buttonPrimary:
+    label: "Explore Courses"
+    url: "https://engineers.inpyjama.com/learn"
+
+  buttonSecondary:
+    label: "Join the Newsletter"
+    url: "https://sendfox.com/inpyjama"
+
+  text2: "We have cracked the interviews on repeat. We have had offers from these industry giants..."
+
+  items:
+    - "images/companies/amazon.png"
+    - "images/companies/arm.png"
+    - "images/companies/atmel.png"
+    - "images/companies/google.png"
+    - "images/companies/intel.png"
+    - "images/companies/meta.png"
+    - "images/companies/microchip.png"
+    - "images/companies/microsoft.png"
+    - "images/companies/nvidia.png"
+    - "images/companies/qualcomm.png"
+    - "images/companies/samsung.png"
+    - "images/companies/ti.png"
+
+  text3: "We know what it takes to get in!"
