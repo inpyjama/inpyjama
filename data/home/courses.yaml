@@ -1,0 +1,14 @@
+enabled: true
+id: "course"
+
+content:
+  title: "Courses"
+  text: "We took everything that we know about Embedded Systems Engineering and recorded those as courses!"
+  cards:
+    - image: "images/courses/roadmap.png"
+      title: "Roadmap and Strategies!"
+      text: "If you are just getting started with Embedded systems. Start here."
+      button:
+        label: "Signup (Free)"
+        url: "https://engineers.inpyjama.com/learn/roadmap"
+

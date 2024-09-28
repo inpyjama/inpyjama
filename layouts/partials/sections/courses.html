@@ -1,6 +1,6 @@
 <section class="section services py-3">
   <div class="container">
-    <div class="row justify-content-center pb-5">
+    <div class="row justify-content-center pb-3">
       <div class="col-12 col-xl-6">
         {{ with .content.title }}
           <h3 class="fs-1 fw-bold text-center text-primary pb-3">{{ . }}</h3>
@@ -13,10 +13,10 @@
     <div class="row g-5">
       {{ range .content.cards }}
         <div class="col-12 col-xl-4">
-          <div class="card bg-blue-16 border-0 border-radius-34 p-4">
+          <div class="card border-1 border-radius-0">
             {{ with .image }}{{ partial "utilities/image-fluid.html" . }}{{ end }}
-            <div class="card-body text-center">
-              {{ with .title }}<h4 class="card-title text-center text-primary pb-4">{{ . }}</h4>{{ end }}
+            <div class="card-body">
+              {{ with .title }}<h4 class="card-title text-primary pb-4">{{ . }}</h4>{{ end }}
               {{ with .text }}<p class="card-text text-black-61 pb-4">{{ . }}</p>{{ end }}
               {{ with .button }}<a class="btn btn-outline-primary px-4" href="{{ .url }}">{{ .label }}</a>{{ end }}
             </div>
