@@ -1,0 +1,26 @@
+<section class="section reasons py-3">
+  <div class="container">
+    <!-- Title -->
+    <div class="row">
+      {{ with .content.title }}
+      <h1 class="fw-bold text-primary text-center pb-4">{{ . | markdownify }}</h1>
+    {{ end }}
+    </div>
+
+    <div class="row justify-content-center">
+      {{ range $i, $e := .content.list }}
+        <div class="col-12 col-xl-4">
+          <div class="card border-0 border-radius-34 p-4">
+            {{ with $e.image }}
+              {{ partial "utilities/reasons.html" $e.image }}
+              <div class="card-body reasons-props p-0 pt-4 ">
+                <span class="fw-bold text-primary"> {{ $e.member }}</span>
+                <p class="card-text text-black-61">{{ $e.text | markdownify }}</p>
+              </div>
+            {{ end }}
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

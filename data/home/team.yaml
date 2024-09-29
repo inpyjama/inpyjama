@@ -3,6 +3,7 @@ id: "team"
 
 content:
   title: "The Team!"
+
   image1: "images/team.png"
   text1: "We are a bunch of Embedded Systems Engineers with a decade of experience working in the Semiconductor Industry. \n\n
 
@@ -18,7 +19,33 @@ content:
     label: "Join the Newsletter"
     url: "https://sendfox.com/inpyjama"
 
-  text2: "We have cracked the interviews on repeat. We have had offers from these industry giants..."
+  list:
+      - member: "Piyush Itankar"
+        image: "images/team/piyush.jpg"
+        text: "Electrical Engineer by Education, went on to pursuing masters in Embedded Systems. Has worked at **Intel** on Navigation Firmware, Bluetooth Driver and RF validation software. \n\nCurrently working as a Embedded Software Engineer at **Google**. Has been involved with Firmware development for the Power Management Sub-system on the Tensor SoCs (Pixel Phones) and Pixel Watch System software."
+        linkedin: "https://www.linkedin.com/in/streetdogg/"
+
+      - member: "Dev Bishnoi"
+        image: "images/team/dev.jpg"
+        text: "Computer Science student turned Embedded Systems Engineer. Started to work with AI accelerators, writing lower level code and got hooked to Embedded systems. \n\nWorked on the Pixel Phone SoC (Tensor SoC) for four years and then moved on to working on the Pixel Watch System Software."
+        linkedin: "https://www.linkedin.com/in/dev-bishnoi-468596126/"
+
+      - member: "Mahmad Bharmal"
+        image: "images/team/mahmad.jpeg"
+        text: "Graduated in Computer Science and went on to pursuing master's degree in Embedded Systems Design. \n\nWorked on the Bluetooth Firmware crash handling at Intel. Spent four long years working on the Pixel Phone's SoC (Tensor SoC), specifically the ARMv8-A CPU cluster. Current working at Google on the Pixel Watch system Software."
+        linkedin: "https://www.linkedin.com/in/mahmadbharmal/"
+
+      - member: "Wasim Akram"
+        image: "images/team/wasim.jpg"
+        text: "Works as L4 at Google"
+        linkedin: "https://www.linkedin.com/in/wasim-akram-6a86a09b/"
+
+      - member: "Rajat Batra"
+        image: "images/team/rajat.jpg"
+        text: "Works as L4 at Google"
+        linkedin: "https://www.linkedin.com/in/rajat-batra-a88124126/"
+
+  text2: "Over the years, we had interviewed at, got offers (National and International) and/or work at the following semiconductor giants!"
 
   items:
     - "images/companies/amazon.png"
@@ -35,3 +62,7 @@ content:
     - "images/companies/ti.png"
 
   text3: "We know what it takes to get in!"
+
+  button:
+    label: "Let's talk"
+    url: "#"

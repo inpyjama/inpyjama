@@ -7,8 +7,13 @@ content:
   cards:
     - image: "images/courses/roadmap.png"
       title: "Roadmap and Strategies!"
-      text: "If you are just getting started with Embedded systems. Start here."
+      text: "Dive into the details of what Embedded Embedded Systems is and the roadmap to going about learning it. The presentation is fast paced and focused on how one can becomes a Embedded Systems Software Engineer."
       button:
         label: "Signup (Free)"
         url: "https://engineers.inpyjama.com/learn/roadmap"
-
+    - image: "images/courses/arsenal.png"
+      title: "Firmware Engineer's Arsenal!"
+      text: "Collection of courses for Aspiring Embedded Systems or Firmware Engineers. Topics include - C Language, C Pointers, ARM Cortex M CPU programming, GNU Make, Linker Script and OS concepts (FreeRTOS). More topics and courses to be added with time."
+      button:
+        label: "Explore the Course"
+        url: "https://engineers.inpyjama.com/learn/roadmap"
