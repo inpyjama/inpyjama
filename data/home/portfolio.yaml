@@ -4,7 +4,7 @@ id: "portfolio"
 content:
   - image: "images/vc.jpg"
     pretitle: "You can learn Embedded Systems by following"
-    title: "The Virtuous Circle"
+    title: "The Five Essential ingredients"
     text: "Any Embedded System Development will have at least three of - CPU, C/Assembly, Operating Systems, FPGAs and Build Tools! All one has to do is - know a little bit of each of these topics to be useful on a team. The mastery of each of these topics will come naturally with time."
 
     buttons:

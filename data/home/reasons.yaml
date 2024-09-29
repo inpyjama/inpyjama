@@ -6,45 +6,45 @@ content:
 
   list:
       - member: "Versatility in Career Opportunities"
-        image: "images/reasons/default.png"
+        image: "images/reasons/1.png"
         text: "With a solid understanding of embedded systems, you can pursue careers in various fields such as automotive electronics, industrial automation, consumer electronics, medical devices, aerospace, and many more."
 
       - member: "High Demand for Skilled Professionals"
-        image: "images/reasons/default.png"
+        image: "images/reasons/2.png"
         text: "The demand for skilled embedded system engineers is consistently high across industries, making it an attractive career option with promising job prospects."
 
       - member: "Opportunities to Work on Cutting-Edge Projects"
-        image: "images/reasons/default.png"
+        image: "images/reasons/3.png"
         text: "Embedded systems are at the heart of many exciting technological advancements, such as autonomous vehicles, smart home devices, and wearables. Learning embedded systems can give you access to projects that push the boundaries of innovation."
 
       - member: "Chance to Develop a Wide Range of Skills"
-        image: "images/reasons/default.png"
+        image: "images/reasons/4.png"
         text: "Embedded system development requires knowledge in programming languages (C, C++, etc.), microcontrollers, operating systems, communication protocols, and more. This diverse skillset can make you a valuable asset in various roles within an organization."
 
       - member: "Competitive Salary Potential"
-        image: "images/reasons/default.png"
+        image: "images/reasons/5.png"
         text: "Due to the specialized nature of embedded system engineering, professionals in this field often enjoy competitive salaries compared to other technical careers."
 
       - member: "Opportunities for Entrepreneurship"
-        image: "images/reasons/default.png"
+        image: "images/reasons/6.png"
         text: "Understanding how to design and implement solutions using microcontrollers and other embedded systems can be a significant asset if you ever decide to start your own product development or electronics-related business venture."
 
       - member: "Constant Learning Opportunities"
-        image: "images/reasons/default.png"
+        image: "images/reasons/7.png"
         text: "The field of embedded systems is constantly evolving, with new technologies and tools emerging regularly. This means that learning embedded systems opens up the opportunity for continuous professional growth and development."
 
       - member: "Global Relevance"
-        image: "images/reasons/default.png"
+        image: "images/reasons/8.png"
         text: "Embedded system engineering has a global relevance, with companies from around the world adopting these technologies to develop innovative products. This can lead to career opportunities not just domestically but also internationally."
 
       - member: "Hands-on Learning"
-        image: "images/reasons/default.png"
+        image: "images/reasons/9.png"
         text: "Embedded system development often involves working with physical prototypes and debugging hardware issues, which can make for a more engaging and hands-on learning experience compared to purely software-based projects."
 
       - member: "Interdisciplinary Connections"
-        image: "images/reasons/default.png"
+        image: "images/reasons/10.png"
         text: "Embedded systems require an understanding of both electronics (hardware) and computer science (software), making it easier to connect theoretical concepts from different disciplines. This interdisciplinary approach can foster a deeper understanding of how technologies work together."
 
       - member: "Paving the Way for IoT Careers"
-        image: "images/reasons/default.png"
+        image: "images/reasons/11.png"
         text: "With the growing trend of Internet of Things (IoT) applications, learning embedded systems provides a strong foundation in programming and device management that is directly applicable to careers involving IoT development and deployment."

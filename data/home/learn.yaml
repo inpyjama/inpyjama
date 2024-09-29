@@ -1,0 +1,6 @@
+enabled: true
+id: "learn"
+
+content:
+  title: "Learning Embedded Systems"
+  subtitle: "Here is how one can go about learning Embedded Systems Software Engineering."
