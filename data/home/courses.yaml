@@ -16,4 +16,81 @@ content:
       text: "Collection of courses for Aspiring Embedded Systems or Firmware Engineers. Topics include - C Language, C Pointers, ARM Cortex M CPU programming, GNU Make, Linker Script and OS concepts (FreeRTOS). More topics and courses to be added with time."
       button:
         label: "Explore the Course"
-        url: "https://engineers.inpyjama.com/learn/roadmap"
+        url: "https://engineers.inpyjama.com/learn/fw-arsenal"
+
+    - image: "images/courses/aarch64.png"
+      title: "todo"
+      text: "todo"
+      button:
+        label: "Explore more"
+        url: "#"
+
+    - image: "images/courses/arm-m.png"
+      title: "todo"
+      text: "todo"
+      button:
+        label: "Explore more"
+        url: "#"
+
+    - image: "images/courses/arsenal-with-face.png"
+      title: "todo"
+      text: "todo"
+      button:
+        label: "Explore more"
+        url: "#"
+
+    - image: "images/courses/c-in-design.png"
+      title: "todo"
+      text: "todo"
+      button:
+        label: "Explore more"
+        url: "#"
+
+    - image: "images/courses/c-pointers.png"
+      title: "todo"
+      text: "todo"
+      button:
+        label: "Explore more"
+        url: "#"
+
+    - image: "images/courses/embedded systems design.png"
+      title: "todo"
+      text: "todo"
+      button:
+        label: "Explore more"
+        url: "#"
+
+    - image: "images/courses/firmware.png"
+      title: "todo"
+      text: "todo"
+      button:
+        label: "Explore more"
+        url: "#"
+
+    - image: "images/courses/freeRTOS.png"
+      title: "todo"
+      text: "todo"
+      button:
+        label: "Explore more"
+        url: "#"
+
+    - image: "images/courses/make.png"
+      title: "todo"
+      text: "todo"
+      button:
+        label: "Explore more"
+        url: "#"
+
+    - image: "images/courses/risc-v.png"
+      title: "todo"
+      text: "todo"
+      button:
+        label: "Explore more"
+        url: "#"
+
+    - image: "images/courses/stm32.png"
+      title: "todo"
+      text: "todo"
+      button:
+        label: "Explore more"
+        url: "#"

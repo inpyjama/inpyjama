@@ -22,7 +22,12 @@ params:
     faviconColor: "#000000"
 
   social:
-    dribbble: "#"
+    twitter: "#"
+    facebook: "#"
+    youtube: "#"
+    instagram: "#"
+    whatsapp: "#"
+    discord: "#"
 
   location:
     - "Keerthi Harmony, Raghevendra Circle, Bangalore - 560016"
@@ -30,7 +35,7 @@ params:
   contact:
     - "support@inpyjama.com"
     - "business@inpyjama.com"
-    - "+91-8197611671"
+    - "+91-9108898976, +91-9980970507"
 
   copyright: "© 2024 Typobrahe Education LLP. All Rights Reserved."
 
@@ -67,7 +72,7 @@ menus:
       weight: 1
 
     - name: "Blog"
-      url: "/blog"
+      url: "/post"
       weight: 2
 
     - name: "Our team"
@@ -77,10 +82,6 @@ menus:
     - name: "Pricing"
       url: "/#"
       weight: 4
-
-    - name: "Blog"
-      url: "/"
-      weight: 5
 
 taxonomies:
   series: "series"

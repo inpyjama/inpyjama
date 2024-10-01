@@ -37,12 +37,13 @@ content:
 
       - member: "Wasim Akram"
         image: "images/team/wasim.jpg"
-        text: "Works as L4 at Google"
+        text: "Graduated in  Electronics and Communication Engineering, he began his career as an Embedded Software Engineer in 2015 with Qualcomm. Worked on software development and test automation for IoT cameras. Moved on to working with Robert Bosch to work on the car multimedia systems.\n\n
+        Later joined Google as a Firmware Developer for the Pixel Phone SoC and is currently part of the Wear OS Media team."
         linkedin: "https://www.linkedin.com/in/wasim-akram-6a86a09b/"
 
       - member: "Rajat Batra"
         image: "images/team/rajat.jpg"
-        text: "Works as L4 at Google"
+        text: "He worked at Texas Instruments, Microchip, and Atmel. He is very passionate about hardware-software co-design.\n\n"
         linkedin: "https://www.linkedin.com/in/rajat-batra-a88124126/"
 
   text2: "Over the years, we had interviewed at, got offers (National and International) and/or work at the following semiconductor giants!"

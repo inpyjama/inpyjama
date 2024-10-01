@@ -1,19 +1,16 @@
 +++
-author = "Hugo Authors"
-title = "Markdown Syntax Guide"
-date = "2019-03-11"
-description = "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
+author = "Piyush Itankar"
+title = "Hello, World!"
+date = "2024-10-01"
+description = "Lets talk a little  bit about what and who in pyjama is."
 tags = [
-    "markdown",
-    "css",
-    "html",
+    "blog",
 ]
 categories = [
-    "themes",
-    "syntax",
+    "blog",
 ]
-series = ["Themes Guide"]
-aliases = ["migrate-from-jekyl"]
+
+series = ["Hello World"]
 images = ["images/fpga.jpg"]
 +++
 

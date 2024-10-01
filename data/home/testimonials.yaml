@@ -6,21 +6,24 @@ content:
 
   featured:
     image: "images/testimonials-awards.png"
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur et pretium nunc, quis euismod et. Volutpat suspendisse sed in blandit condimentum. Sagittis nullam nec mauris, feugiat hendrerit aliquam cras. Dolor tortor gravida lobortis in ultricies enim vulputate non. Neque nibh donec quam lectus."
-    client: "Anonymous Customer"
+    text: "Hi team, I would like to thank you, the inPyjama team, for this. The concept which seemed to be somewhat difficult to grasp, I was able to learn a lot because of your simple and straight forward approach. I am really looking forward for more such contents from your end because I, for sure, will be attending each of them without fail. Once again Thankyou so much for this."
+    client: "Vishnu Sankarankutty"
 
   list:
-    - text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur et pretium nunc, quis euismod et. Volutpat suspendisse sed in blandit condimentum. Sagittis nullam nec mauris, feugiat hendrerit aliquam cras. Dolor tortor gravida lobortis in ultricies enim vulputate non. Neque nibh donec quam lectus."
-      client: "Anonymous Customer"
+    - text: "The cool thing about this course is that it teaches each and every concept by 'brain tattooing' a mental model, which makes understanding advanced concepts like a breeze. Thank you so much Piyush Itankar and inPyjama team for this outstanding course!"
+      client: "Mayank Manohare"
 
-    - text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur et pretium nunc, quis euismod et. Volutpat suspendisse sed in blandit condimentum. Sagittis nullam nec mauris, feugiat hendrerit aliquam cras. Dolor tortor gravida lobortis in ultricies enim vulputate non. Neque nibh donec quam lectus."
-      client: "Anonymous Customer"
+    - text: "This course gives you exactly what you need to know about pointers! And more importantly how to think about pointers this is really important, and every embedded engineer must know. Once again thanks a lot for this content creators. Expecting more courses from you in future."
+      client: "Gnanesh Sureshchandrar"
 
-    - text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur et pretium nunc, quis euismod et. Volutpat suspendisse sed in blandit condimentum. Sagittis nullam nec mauris, feugiat hendrerit aliquam cras. Dolor tortor gravida lobortis in ultricies enim vulputate non. Neque nibh donec quam lectus."
-      client: "Anonymous Customer"
+    - text: "As experienced C developer, I have learned interesting and efficiently approaches about using C pointers and also what happening behind the scene. To me to visualize the course for viewers was great idea. In the other hand , adding the subtitle to videos would be nice. Maybe in the future, thanks a lot."
+      client: "SuleymanRubarKIZIL"
 
-    - text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur et pretium nunc, quis euismod et. Volutpat suspendisse sed in blandit condimentum. Sagittis nullam nec mauris, feugiat hendrerit aliquam cras. Dolor tortor gravida lobortis in ultricies enim vulputate non. Neque nibh donec quam lectus."
-      client: "Anonymous Customer"
+    - text: "I enjoyed the entire course and the way concepts was explained(photographic diagram) was very understandable and good. Thankyou"
+      client: "Vishnu"
 
-    - text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur et pretium nunc, quis euismod et. Volutpat suspendisse sed in blandit condimentum. Sagittis nullam nec mauris, feugiat hendrerit aliquam cras. Dolor tortor gravida lobortis in ultricies enim vulputate non. Neque nibh donec quam lectus."
-      client: "Anonymous Customer"
+    - text: "I have never seen function pointers defined in such a clear and concise manner as you have, Piyush. Many thanks for it."
+      client: "Vinay Shirol"
+
+    - text: "Awesome, within an hour, if an engineer learns the boot up process of arm - cortex-m, that is unbelievable, instructor is really apt at the matter. Thanks."
+      client: "Vinod"

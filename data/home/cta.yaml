@@ -2,7 +2,7 @@ enabled: true
 id: "cta"
 
 content:
-  title: "Subscribe to our Newsletter"
+  title: "Join us!"
   image: "images/services-web-development.png"
   button:
     label: "Let's talk"
