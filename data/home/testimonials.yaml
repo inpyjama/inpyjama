@@ -12,6 +12,7 @@ content:
   list:
     - text: "The cool thing about this course is that it teaches each and every concept by 'brain tattooing' a mental model, which makes understanding advanced concepts like a breeze. Thank you so much Piyush Itankar and inPyjama team for this outstanding course!"
       client: "Mayank Manohare"
+      image: "images/logo.png"
 
     - text: "This course gives you exactly what you need to know about pointers! And more importantly how to think about pointers this is really important, and every embedded engineer must know. Once again thanks a lot for this content creators. Expecting more courses from you in future."
       client: "Gnanesh Sureshchandrar"

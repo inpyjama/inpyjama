@@ -1,5 +1,8 @@
 <section class="section team py-3">
   <div class="container">
+    <div class="row section-divider p-4">
+      <hr>
+    </div>
     <!-- Title -->
     <div class="row">
       {{ with .content.title }}
@@ -18,15 +21,37 @@
         {{ end }}
         <div class="d-flex flex-column flex-xl-row">
           {{ with .content.buttonPrimary }}
-            <a class="btn btn-primary text-light px-4 my-1" href="{{ .url }}">{{ .label }}</a>
+            <a class="btn btn-primary text-light px-4 my-1" target="_blank" href="{{ .url }}">{{ .label }}</a>
           {{ end }}
           {{ with .content.buttonSecondary }}
-            <a class="btn btn-outline-primary px-4 my-1 ms-xl-4" href="{{ .url }}">{{ .label }}<span class="ms-2">{{ partial "icons/arrow-right.html" }}</span></a>
+            <a class="btn btn-outline-primary px-4 my-1 ms-xl-4" target="_blank" href="{{ .url }}">{{ .label }}<span class="ms-2">{{ partial "icons/arrow-right.html" }}</span></a>
           {{ end }}
         </div>
       </div>
     </div>
+    <div class="row flex-column flex-xl-row-reverse">
+      {{ with .content.text2 }}
+        <p class="text-center p-4">{{ . | markdownify }}</p>
+      {{ end }}
+    </div>
 
+    <!-- Companies we worked for -->
+    <div class="row align-items-center justify-content-center">
+      {{ range .content.items }}
+      <div class="col px-3 my-2 text-center">
+        {{ partial "utilities/image-companies.html" . }}
+      </div>
+      {{ end }}
+    </div>
+
+    <div class="row section-divider p-4">
+      <hr>
+    </div>
+
+    <!-- Team members -->
+    <div class="row flex-column flex-xl-row-reverse">
+      <h3 class="fw-bold text-primary text-center p-4">more about us</h3>
+    </div>
     <div class="row justify-content-center">
       {{ range $i, $e := .content.list }}
         <div class="col-12 col-xl-4">
@@ -44,35 +69,21 @@
       {{ end }}
     </div>
 
-
-    <div class="row flex-column flex-xl-row-reverse">
-        {{ with .content.text2 }}
-          <p class="text-center p-4">{{ . | markdownify }}</p>
-        {{ end }}
-    </div>
-
-    <!-- Companies we worked for -->
-    <div class="row align-items-center justify-content-center">
-      {{ range .content.items }}
-      <div class="col px-3 my-2 text-center">
-        {{ partial "utilities/image-third.html" . }}
-      </div>
-      {{ end }}
-    </div>
-
     <div class="row flex-column flex-xl-row-reverse">
       {{ with .content.text3 }}
-        <p class="text-center pt-4">{{ . | markdownify }}</p>
+        <h4 class="fw-bold text-primary text-center p-4">{{ . | markdownify }}</h4>
       {{ end }}
     </div>
-
     <div class="row justify-content-center">
       <div class="col-12 col-xl-6 text-center">
         {{ with .content.button }}
-          <a class="btn btn-outline-primary px-4" href="{{ .url }}">{{ .label }}<span class="ms-2">{{ partial "icons/arrow-right.html" }}</span></a>
+          <a class="btn btn-outline-primary px-4" target="_blank" href="{{ .url }}">{{ .label }}<span class="ms-2">{{ partial "icons/arrow-right.html" }}</span></a>
         {{ end }}
       </div>
     </div>
+  </div>
+  <div class="row section-divider p-4 ">
+    <hr>
   </div>
 </section>
 

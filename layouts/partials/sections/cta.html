@@ -8,7 +8,22 @@
       </div>
     </div>
     <div class="row justify-content-center">
-      <div class="col-12 col-xl-6 text-center">
+      <div class="row justify-content-center">
+        {{ range $i, $e := .content.list }}
+          <div class="col-12 col-xl-4">
+            <div class="card border-0 border-radius-34 p-4">
+              {{ with $e.image }}
+                {{ partial "utilities/social.html" $e.image }}
+                <div class="card-body p-0 pt-4 ">
+                  <span class="fw-bold text-primary text-nowrap"> {{ $e.member }}</span>
+                  <p class="card-text text-black-61">{{ $e.text | markdownify }}
+                    <a class="fw-bold text-primary text-nowrap" target="_blank" href="{{ $e.linkedin }}">more...</a>
+                 </p>
+                </div>
+              {{ end }}
+            </div>
+          </div>
+        {{ end }}
       </div>
     </div>
   </div>

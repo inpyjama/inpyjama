@@ -2,8 +2,34 @@ enabled: true
 id: "cta"
 
 content:
-  title: "Join us!"
+  title: "connect with us"
   image: "images/services-web-development.png"
   button:
     label: "Let's talk"
     url: "#"
+
+  list:
+      - member: "Whatsapp"
+        image: "images/social/whatsapp.png"
+        text: "Follow us on whatsapp and learn embedded systems casually. We share articles, posts, videos and offers."
+        linkedin: ""
+
+      - member: "Discord"
+        image: "images/social/discord.png"
+        text: "We have vibrant community on Discord. This is the place to be if you want to find others to discuss with and be guided by. We have students, teachers, hackers, industry experts etc"
+        linkedin: ""
+
+      - member: "Linkedin"
+        image: "images/social/linkedin.png"
+        text: "Join the linkedin group"
+        linkedin: ""
+
+      - member: "YouTube"
+        image: "images/social/youtube.png"
+        text: ""
+        linkedin: ""
+
+      - member: "Newsletter"
+        image: "images/social/newsletter.png"
+        text: ""
+        linkedin: ""

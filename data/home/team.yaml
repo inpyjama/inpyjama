@@ -46,7 +46,7 @@ content:
         text: "He worked at Texas Instruments, Microchip, and Atmel. He is very passionate about hardware-software co-design.\n\n"
         linkedin: "https://www.linkedin.com/in/rajat-batra-a88124126/"
 
-  text2: "Over the years, we had interviewed at, got offers (National and International) and/or work at the following semiconductor giants!"
+  text2: "Over the years, we had **interviewed at**, **got offers (National and International)** and/or **worked at**"
 
   items:
     - "images/companies/amazon.png"
@@ -60,9 +60,12 @@ content:
     - "images/companies/nvidia.png"
     - "images/companies/qualcomm.png"
     - "images/companies/samsung.png"
+    - "images/companies/synopsys.png"
+    - "images/companies/bosch.png"
     - "images/companies/ti.png"
+    - "images/companies/tii.jpg"
 
-  text3: "We know what it takes to get in!"
+  text3: "we know what it takes to get in!"
 
   button:
     label: "Let's talk"
