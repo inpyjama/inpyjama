@@ -51,10 +51,10 @@ menus:
       url: "https://www.youtube.com/@inpyjama"
       weight: 3
     - name: "Discord"
-      url: ""
+      url: "https://discord.com/invite/embedded-systems-party-inpyjama-1165531784293912576"
       weight: 4
     - name: "Whatsapp"
-      url: ""
+      url: "https://whatsapp.com/channel/0029VaLHkWT6buMPULyhxd1Q"
       weight: 5
     - name: "Courses"
       url: "https://engineers.inpyjama.com/learn"
