@@ -45,10 +45,10 @@ menus:
       url: "/"
       weight: 1
     - name: "Blog"
-      url: "https://blog.inpyjama.com"
+      url: "/posts"
       weight: 2
     - name: "YouTube"
-      url: ""
+      url: "https://www.youtube.com/@inpyjama"
       weight: 3
     - name: "Discord"
       url: ""
@@ -72,16 +72,32 @@ menus:
       weight: 1
 
     - name: "Blog"
-      url: "/post"
+      url: "/posts"
       weight: 2
 
-    - name: "Our team"
-      url: "/#"
+    - name: "Terms and Conditions"
+      url: "/terms"
       weight: 3
 
-    - name: "Pricing"
-      url: "/#"
+    - name: "Privacy Policy"
+      url: "/privacy"
       weight: 4
+
+    - name: "Cancellation and Refund"
+      url: "/refund"
+      weight: 5
+
+    - name: "Shipping and Exchange"
+      url: "/shipping"
+      weight: 6
+
+    - name: "Contact Us"
+      url: "/contact"
+      weight: 7
+
+    - name: "Disclaimer"
+      url: "/disclaimer"
+      weight: 8
 
 taxonomies:
   series: "series"
