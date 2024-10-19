@@ -21,28 +21,28 @@ content:
 
   list:
       - member: "Piyush Itankar"
-        image: "images/team/piyush.jpg"
+        image: "images/teams/piyush.jpg"
         text: "Electrical Engineer by Education, went on to pursuing masters in Embedded Systems. Has worked at **Intel** on Navigation Firmware, Bluetooth Driver and RF validation software. \n\nCurrently working as a Embedded Software Engineer at **Google**. Has been involved with Firmware development for the Power Management Sub-system on the Tensor SoCs (Pixel Phones) and Pixel Watch System software."
         linkedin: "https://www.linkedin.com/in/streetdogg/"
 
       - member: "Dev Bishnoi"
-        image: "images/team/dev.jpg"
+        image: "images/teams/dev.jpg"
         text: "Computer Science student turned Embedded Systems Engineer. Started to work with AI accelerators, writing lower level code and got hooked to Embedded systems. \n\nWorked on the Pixel Phone SoC (Tensor SoC) for four years and then moved on to working on the Pixel Watch System Software."
         linkedin: "https://www.linkedin.com/in/dev-bishnoi-468596126/"
 
       - member: "Mahmad Bharmal"
-        image: "images/team/mahmad.jpeg"
+        image: "images/teams/mahmad.jpeg"
         text: "Graduated in Computer Science and went on to pursuing master's degree in Embedded Systems Design. \n\nWorked on the Bluetooth Firmware crash handling at Intel. Spent four long years working on the Pixel Phone's SoC (Tensor SoC), specifically the ARMv8-A CPU cluster. Current working at Google on the Pixel Watch system Software."
         linkedin: "https://www.linkedin.com/in/mahmadbharmal/"
 
       - member: "Wasim Akram"
-        image: "images/team/wasim.jpg"
+        image: "images/teams/wasim.jpg"
         text: "Graduated in  Electronics and Communication Engineering, he began his career as an Embedded Software Engineer in 2015 with Qualcomm. Worked on software development and test automation for IoT cameras. Moved on to working with Robert Bosch to work on the car multimedia systems.\n\n
         Later joined Google as a Firmware Developer for the Pixel Phone SoC and is currently part of the Wear OS Media team."
         linkedin: "https://www.linkedin.com/in/wasim-akram-6a86a09b/"
 
       - member: "Rajat Batra"
-        image: "images/team/rajat.jpg"
+        image: "images/teams/rajat.jpg"
         text: "He worked at Texas Instruments, Microchip, and Atmel. He is very passionate about hardware-software co-design.\n\n"
         linkedin: "https://www.linkedin.com/in/rajat-batra-a88124126/"
 
