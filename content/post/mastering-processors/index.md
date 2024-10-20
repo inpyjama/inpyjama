@@ -1,6 +1,5 @@
 +++
 title = '4 things to look for to master any Processor!'
-draft = true
 date = "2023-04-21"
 tags = [
     "tips",
