@@ -14,7 +14,7 @@
       <div class="row g-4 pb-5">
         {{ range (.Paginate .RegularPages).Pages }}
         <div class="col-12 col-md-6 col-lg-4">
-          <a class="card text-decoration-none h-100" target="_blank" href="{{ .Permalink }}">
+          <a class="card text-decoration-none h-100" href="{{ .Permalink }}">
             <div class="aspect-ratio-62-5">
               {{ with ( partial "utilities/get-featured-image.html" . ) }}
                 {{ partial "utilities/card-img-top" . }}
