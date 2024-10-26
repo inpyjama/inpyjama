@@ -1,7 +1,7 @@
 +++
 author = "Piyush Itankar"
 title = "Trees in Embedded Systems!"
-date = "2024-10-01"
+date = "2023-04-21"
 tags = [
     "dsa",
 ]

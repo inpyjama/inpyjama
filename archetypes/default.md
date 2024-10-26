@@ -1,9 +1,8 @@
 +++
-author = "TODO"
+author = "Team, in Pyjama!"
 title = '{{ replace .File.ContentBaseName "-" " " | title }}'
-date = {{ .Date }}
 draft = true
-date = "2024-10-01"
+date = "yyyy-mm-dd"
 tags = [
     "TODO",
 ]
