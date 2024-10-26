@@ -20,3 +20,27 @@
   font-size: 1rem !important;
   text-align: justify;
 }
+
+h1 {
+  margin-top: 50px;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+h2 {
+  margin-top: 40px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+blockquote {
+  padding: 20px;
+  margin: 20px 75px 20px 75px;
+  background-color: rgb(210, 236, 247);
+  border-radius: 3px;
+}
+
+blockquote > p {
+  padding: 0px;
+  margin: 0px;
+}
