@@ -10,7 +10,7 @@ categories = [
 ]
 
 series = ["fpga"]
-images = ["hardware-development-using-FPGA/1.webp"]
+images = ["hardware-development-using-fpga/1.webp"]
 +++
 
 Hardware development flow using the open-source toolchain for synthesis, place-n-route, and programming of ice40 FPGA. We use Blinky as an example to guide the discussion.
