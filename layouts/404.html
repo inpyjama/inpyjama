@@ -16,8 +16,50 @@
 
 <script>
   const redirects = {
-    "https://inpyjama.github.io/inpyjama/c": "https://engineers.inpyjama.com/learn/c-ninja-book"
+    "https://inpyjama.github.io/inpyjama/c/arm-a-101":"https://engineers.inpyjama.com/learn/aarch64-101",
+    "https://inpyjama.github.io/inpyjama/c/arm-a-101/":"https://engineers.inpyjama.com/learn/aarch64-101",
+    "https://inpyjama.github.io/inpyjama/y/arm-a-yt":"https://youtube.com/playlist?list=PLFt5JBAXXlQpez5qYwA6-i7afBJRCHp1L&feature=shared",
+    "https://inpyjama.github.io/inpyjama/y/arm-a-yt/":"https://youtube.com/playlist?list=PLFt5JBAXXlQpez5qYwA6-i7afBJRCHp1L&feature=shared",
+    "https://inpyjama.github.io/inpyjama/c/ldd-101":"https://engineers.inpyjama.com/learn/ldd-101",
+    "https://inpyjama.github.io/inpyjama/c/ldd-101/":"https://engineers.inpyjama.com/learn/ldd-101",
+    "https://inpyjama.github.io/inpyjama/c/arm-m-101":"https://engineers.inpyjama.com/learn/m101",
+    "https://inpyjama.github.io/inpyjama/c/arm-m-101/":"https://engineers.inpyjama.com/learn/m101",
+    "https://inpyjama.github.io/inpyjama/y/arm-m-101":"https://www.youtube.com/playlist?list=PLFt5JBAXXlQrAIGdKMq8mxdR_ciC4wlFk",
+    "https://inpyjama.github.io/inpyjama/y/arm-m-101/":"https://www.youtube.com/playlist?list=PLFt5JBAXXlQrAIGdKMq8mxdR_ciC4wlFk",
+    "https://inpyjama.github.io/inpyjama/y/c-playlist":"https://www.youtube.com/playlist?list=PLFt5JBAXXlQow0PLTdqvaiIUMRa71VQHl",
+    "https://inpyjama.github.io/inpyjama/y/c-playlist/":"https://www.youtube.com/playlist?list=PLFt5JBAXXlQow0PLTdqvaiIUMRa71VQHl",
+    "https://inpyjama.github.io/inpyjama/y/yt-emb-podcast":"https://www.youtube.com/playlist?list=PLFt5JBAXXlQrP_VTxU7kDVTFv3GY_GE4K",
+    "https://inpyjama.github.io/inpyjama/y/yt-emb-podcast/":"https://www.youtube.com/playlist?list=PLFt5JBAXXlQrP_VTxU7kDVTFv3GY_GE4K",
+    "https://inpyjama.github.io/inpyjama/f/newsletter-signup":"https://engineers.inpyjama.com/learn/embed-forms?formId=778",
+    "https://inpyjama.github.io/inpyjama/f/newsletter-signup/":"https://engineers.inpyjama.com/learn/embed-forms?formId=778",
+    "https://inpyjama.github.io/inpyjama/p/es-college-projects":"https://engineers.inpyjama.com/learn/es-college-projects",
+    "https://inpyjama.github.io/inpyjama/p/es-college-projects/":"https://engineers.inpyjama.com/learn/es-college-projects",
+    "https://inpyjama.github.io/inpyjama/t/rust-basics":"https://engineers.inpyjama.com/learn/rust-test-series",
+    "https://inpyjama.github.io/inpyjama/t/rust-basics/":"https://engineers.inpyjama.com/learn/rust-test-series",
+    "https://inpyjama.github.io/inpyjama/b/c-ninja-book":"https://engineers.inpyjama.com/learn/c-ninja-book",
+    "https://inpyjama.github.io/inpyjama/b/c-ninja-book/":"https://engineers.inpyjama.com/learn/c-ninja-book",
+    "https://inpyjama.github.io/inpyjama/y/es-roadmap-0":"https://youtu.be/KopbRShTp_Y",
+    "https://inpyjama.github.io/inpyjama/y/es-roadmap-0/":"https://youtu.be/KopbRShTp_Y",
+    "https://inpyjama.github.io/inpyjama/t/es-quiz-0":"https://engineers.inpyjama.com/learn/general-embedded-quiz",
+    "https://inpyjama.github.io/inpyjama/t/es-quiz-0/":"https://engineers.inpyjama.com/learn/general-embedded-quiz",
+    "https://inpyjama.github.io/inpyjama/y/inpyjama-channel":"https://youtube.com/@inpyjama",
+    "https://inpyjama.github.io/inpyjama/y/inpyjama-channel/":"https://youtube.com/@inpyjama",
+    "https://inpyjama.github.io/inpyjama/w/wa-community":"https://whatsapp.com/channel/0029VaLHkWT6buMPULyhxd1Q",
+    "https://inpyjama.github.io/inpyjama/w/wa-community/":"https://whatsapp.com/channel/0029VaLHkWT6buMPULyhxd1Q",
+    "https://inpyjama.github.io/inpyjama/d/discord-community":"https://discord.com/invite/embedded-systems-party-inpyjama-1165531784293912576",
+    "https://inpyjama.github.io/inpyjama/d/discord-community/":"https://discord.com/invite/embedded-systems-party-inpyjama-1165531784293912576",
+    "https://inpyjama.github.io/inpyjama/l/lkdin-piyush":"https://www.linkedin.com/in/streetdogg",
+    "https://inpyjama.github.io/inpyjama/l/lkdin-piyush/":"https://www.linkedin.com/in/streetdogg",
+    "https://inpyjama.github.io/inpyjama/l/lkdin-mahmad":"https://www.linkedin.com/in/mahmadbharmal",
+    "https://inpyjama.github.io/inpyjama/l/lkdin-mahmad/":"https://www.linkedin.com/in/mahmadbharmal",
+    "https://inpyjama.github.io/inpyjama/l/lkdin-dev":"https://www.linkedin.com/in/dev-bishnoi-468596126",
+    "https://inpyjama.github.io/inpyjama/l/lkdin-dev/":"https://www.linkedin.com/in/dev-bishnoi-468596126",
+    "https://inpyjama.github.io/inpyjama/learn":"https://engineers.inpyjama.com/learn",
+    "https://inpyjama.github.io/inpyjama/learn/":"https://engineers.inpyjama.com/learn",
+    "https://inpyjama.github.io/inpyjama/hello-world":"https://engineers.inpyjama.com",
+    "https://inpyjama.github.io/inpyjama/hello-world/":"https://engineers.inpyjama.com"
   };
+
   function printCurrentPageUrl() {
     const currentUrl = window.location.href;
     console.log("currentUrl: " + currentUrl);
