@@ -21,15 +21,15 @@ content:
 
       - member: "Linkedin"
         image: "images/social/linkedin.png"
-        text: "Join the linkedin group"
+        text: "Checkout our linkedin page. We share all updated on the company page."
         linkedin: "https://www.linkedin.com/company/103018956"
 
       - member: "YouTube"
         image: "images/social/youtube.png"
-        text: ""
+        text: "Our YouTube channel has videos and playlists covering various topics on Embedded Systems. There are also podcasts that you may enjoy tuning in to :)"
         linkedin: "https://www.youtube.com/@inpyjama"
 
       - member: "Newsletter"
         image: "images/social/newsletter.png"
-        text: ""
+        text: "We send occasional posts on embedded system topics, articles, series, offers and more to our readers."
         linkedin: "https://sendfox.com/inpyjama"
