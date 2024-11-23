@@ -5,9 +5,9 @@ content:
   title: "The Team!"
 
   image1: "images/team.png"
-  text1: "We are a bunch of Embedded Systems Engineers with a decade of experience working in the Semiconductor Industry. \n\n
+  text1: "We are a bunch of Embedded Systems Engineers with a decade of experience working in the Semiconductor Industry.
 
-  We have had the good fortune of witnessing the entire Embedded systems development journey - From SoCs design to running Linux on it. Right from **BootRom** to the **Linux Kernel Drivers** (and beyond) development - **We have seen it all!** \n\n
+  We have had the good fortune of witnessing the entire Embedded systems development journey - From SoCs design to running Linux on it. Right from **BootRom** to the **Linux Kernel Drivers** (and beyond) development - **We have seen it all!**
 
   We precisely know what works and what doesn't, which skills are useful and which just feel useful... **inPyjama** is our effort to lowering the barrier to learning Embedded Systems and help learners focus on what really matters in the Industry and in real life!"
 
@@ -22,28 +22,28 @@ content:
   list:
       - member: "Piyush Itankar"
         image: "images/teams/piyush.jpg"
-        text: "Electrical Engineer by Education, went on to pursuing masters in Embedded Systems. Has worked at **Intel** on Navigation Firmware, Bluetooth Driver and RF validation software. \n\nCurrently working as a Embedded Software Engineer at **Google**. Has been involved with Firmware development for the Power Management Sub-system on the Tensor SoCs (Pixel Phones) and Pixel Watch System software."
+        text: "Electrical Engineer by Education, went on to pursuing masters in Embedded Systems. Has worked at **Intel** on Navigation Firmware, Bluetooth Driver and RF validation software. Currently working as a Embedded Software Engineer at **Google**. Has been involved with Firmware development for the Power Management Sub-system on the Tensor SoCs (Pixel Phones) and Pixel Watch System software."
         linkedin: "https://www.linkedin.com/in/streetdogg/"
 
       - member: "Dev Bishnoi"
         image: "images/teams/dev.jpg"
-        text: "Computer Science student turned Embedded Systems Engineer. Started to work with AI accelerators, writing lower level code and got hooked to Embedded systems. \n\nWorked on the Pixel Phone SoC (Tensor SoC) for four years and then moved on to working on the Pixel Watch System Software."
+        text: "Computer Science student turned Embedded Systems Engineer. Started to work with AI accelerators, writing lower level code and got hooked to Embedded systems. Worked on the Pixel Phone SoC (Tensor SoC) for four years and then moved on to working on the Pixel Watch System Software."
         linkedin: "https://www.linkedin.com/in/dev-bishnoi-468596126/"
 
       - member: "Mahmad Bharmal"
         image: "images/teams/mahmad.jpeg"
-        text: "Graduated in Computer Science and went on to pursuing master's degree in Embedded Systems Design. \n\nWorked on the Bluetooth Firmware crash handling at Intel. Spent four long years working on the Pixel Phone's SoC (Tensor SoC), specifically the ARMv8-A CPU cluster. Current working at Google on the Pixel Watch system Software."
+        text: "Graduated in Computer Science and went on to pursuing master's degree in Embedded Systems Design. Worked on the Bluetooth Firmware crash handling at Intel. Spent four long years working on the Pixel Phone's SoC (Tensor SoC), specifically the ARMv8-A CPU cluster. Current working at Google on the Pixel Watch system Software."
         linkedin: "https://www.linkedin.com/in/mahmadbharmal/"
 
       - member: "Wasim Akram"
         image: "images/teams/wasim.jpg"
-        text: "Graduated in  Electronics and Communication Engineering, he began his career as an Embedded Software Engineer in 2015 with Qualcomm. Worked on software development and test automation for IoT cameras. Moved on to working with Robert Bosch to work on the car multimedia systems.\n\n
+        text: "Graduated in  Electronics and Communication Engineering, he began his career as an Embedded Software Engineer in 2015 with Qualcomm. Worked on software development and test automation for IoT cameras. Moved on to working with Robert Bosch to work on the car multimedia systems.
         Later joined Google as a Firmware Developer for the Pixel Phone SoC and is currently part of the Wear OS Media team."
         linkedin: "https://www.linkedin.com/in/wasim-akram-6a86a09b/"
 
       - member: "Rajat Batra"
         image: "images/teams/rajat.jpg"
-        text: "He worked at Texas Instruments, Microchip, and Atmel. He is very passionate about hardware-software co-design.\n\n"
+        text: "He worked at Texas Instruments, Microchip, and Atmel. He is very passionate about hardware-software co-design.\n"
         linkedin: "https://www.linkedin.com/in/rajat-batra-a88124126/"
 
   text2: "Over the years, we had **interviewed at**, **got offers (National and International)** and/or **worked at**"

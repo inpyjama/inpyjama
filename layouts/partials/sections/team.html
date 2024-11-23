@@ -60,7 +60,9 @@
               {{ partial "utilities/team.html" $e.image }}
               <div class="card-body p-0 pt-4 ">
                 <span class="fw-bold text-primary text-nowrap"> {{ $e.member }}</span>
-                <p class="card-text text-black-61">{{ $e.text | markdownify }} <a class="fw-bold text-primary text-nowrap" target="_blank" href="{{ $e.linkedin }}">more...</a> </p>
+                <p class="card-text">{{ $e.text | markdownify }}
+                  <a class="fw-bold text-primary text-nowrap" target="_blank" href="{{ $e.linkedin }}">more...</a>
+                </p>
 
               </div>
             {{ end }}
