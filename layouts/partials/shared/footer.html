@@ -13,8 +13,16 @@
         <ul class="d-flex justify-content-center justify-content-xl-start list-unstyled">
           {{ with .dribbble }}<li class="rounded-circle bg-blue-63 me-2 p-2"><a class="d-flex align-items-center justify-content-center size-16" target="_blank" href="{{ . }}">{{ partial "icons/dribbble.html" }}</a></li>{{ end }}
           {{ with .instagram }}<li class="rounded-circle bg-blue-63 me-2 p-2"><a class="d-flex align-items-center justify-content-center size-16" target="_blank" href="{{ . }}">{{ partial "icons/instagram.html" }}</a></li>{{ end }}
-          {{ with .facebook }}<li class="rounded-circle bg-blue-63 me-2 p-2"><a class="d-flex align-items-center justify-content-center size-16" href="{{ . }}">{{ partial "icons/facebook.html" }}</a></li>{{ end }}
           {{ with .twitter }}<li class="rounded-circle bg-blue-63 me-2 p-2"><a class="d-flex align-items-center justify-content-center size-16" href="{{ . }}">{{ partial "icons/twitter.html" }}</a></li>{{ end }}
+          {{ with .whatsapp }}<li class="rounded-circle bg-blue-63 me-2 p-2"><a class="d-flex align-items-center justify-content-center size-16" href="{{ . }}">{{ partial "icons/whatsapp.html" }}</a></li>{{ end }}
+
+          {{ with .linkedin }}<li class="rounded-circle bg-blue-63 me-2 p-2"><a class="d-flex align-items-center justify-content-center size-16" href="{{ . }}">{{ partial "icons/linkedin.html" }}</a></li>{{ end }}
+
+          {{ with .youtube }}<li class="rounded-circle bg-blue-63 me-2 p-2"><a class="d-flex align-items-center justify-content-center size-16" href="{{ . }}">{{ partial "icons/youtube.html" }}</a></li>{{ end }}
+
+          {{ with .discord }}<li class="rounded-circle bg-blue-63 me-2 p-2"><a class="d-flex align-items-center justify-content-center size-16" href="{{ . }}">{{ partial "icons/discord.html" }}</a></li>{{ end }}
+
+          {{ with .newsletter }}<li class="rounded-circle bg-blue-63 me-2 p-2"><a class="d-flex align-items-center justify-content-center size-16" href="{{ . }}">{{ partial "icons/newsletter.html" }}</a></li>{{ end }}
         </ul>
         {{ end }}
       </div>

@@ -65,8 +65,8 @@ content:
     - "images/companies/ti.png"
     - "images/companies/tii.jpg"
 
-  text3: "we know what it takes to get in!"
+  text3: "To not miss any updates from us, Join our newsletter"
 
   button:
-    label: "Let's talk"
-    url: "#"
+    label: "Join now!"
+    url: "https://sendfox.com/inpyjama"

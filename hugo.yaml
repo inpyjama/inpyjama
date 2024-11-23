@@ -22,12 +22,12 @@ params:
     faviconColor: "#000000"
 
   social:
-    twitter: "#"
-    facebook: "#"
-    youtube: "#"
-    instagram: "#"
-    whatsapp: "#"
-    discord: "#"
+    twitter: "https://x.com/inpyjama_"
+    youtube: "https://www.youtube.com/@inpyjama"
+    whatsapp: "https://whatsapp.com/channel/0029VaLHkWT6buMPULyhxd1Q"
+    discord: "https://discord.com/invite/embedded-systems-party-inpyjama-1165531784293912576"
+    linkedin: "https://www.linkedin.com/company/103018956/"
+    newsletter: "https://sendfox.com/inpyjama"
 
   location:
     - "Keerthi Harmony, Raghevendra Circle, Bangalore - 560016"
