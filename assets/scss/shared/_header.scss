@@ -12,3 +12,18 @@
     }
   }
 }
+
+.nav-item > .btn {
+  transition: box-shadow 0.15s, background-color 0.15s, color 0.15s;
+}
+
+.nav-item > .btn:hover {
+  background-color: $primary;
+  color: white !important;
+  box-shadow: 0px 0px 4px 0px rgb(97, 97, 97);
+}
+
+.nav-item > .btn:active {
+  color: white !important;
+  box-shadow: 0px 0px 0px 0px rgb(97, 97, 97);
+}
