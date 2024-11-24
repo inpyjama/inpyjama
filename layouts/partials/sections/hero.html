@@ -1,6 +1,9 @@
 <section class="section hero py-3">
   <div class="container">
     <div class="row flex-column flex-xl-row-reverse">
+      <div class="col-12 col-xl-6  d-flex flex-column justify-content-center hero-image">
+        {{ partial "utilities/image-fluid" "images/hero-image.png" }}
+      </div>
       <div class="col-12 col-xl-6 d-flex flex-column justify-content-center">
         {{ with .content.title }}
           <h3 class="hero-title fw-bold display-1 text-primary text-center text-xl-start pb-4">{{ . | markdownify }}</h3>
@@ -8,17 +11,29 @@
         {{ with .content.text }}
           <p class="text-center text-black-61 text-xl-start pb-4">{{ . | markdownify }}</p>
         {{ end }}
-        <div class="d-flex flex-column flex-xl-row">
+        <!-- <div class="d-flex flex-column flex-xl-row">
           {{ with .content.buttonPrimary }}
             <a class="btn btn-primary text-light px-4 my-1" target="_blank" href="{{ .url }}">{{ .label }}</a>
           {{ end }}
           {{ with .content.buttonSecondary }}
             <a class="btn btn-outline-primary px-4 my-1 ms-xl-4" target="_blank" href="{{ .url }}">{{ .label }}<span class="ms-2">{{ partial "icons/arrow-right.html" }}</span></a>
           {{ end }}
-        </div>
-      </div>
-      <div class="col-12 col-xl-6  d-flex flex-column justify-content-center hero-image">
-        {{ partial "utilities/image-fluid" "images/hero-image.png" }}
+        </div> -->
+        {{ with .content.sub }}
+          <h3 class="fw-bold text-primary text-center text-xl-start">{{ . | markdownify }}</h3>
+        {{ end }}
+        <form method="post" action="https://sendfox.com/form/1drwn5/m7y4j8" class="sendfox-form" id="m7y4j8" data-async="true" data-recaptcha="true">
+          <p>
+          <label for="sendfox_form_name"></label><input class="form-text" type="text" id="sendfox_form_name" placeholder="First Name" name="first_name" required />
+          <label for="sendfox_form_email"></label><input class="form-text" type="email" id="sendfox_form_email" placeholder="Email" name="email" required />
+          <!-- no botz please -->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="a_password" tabindex="-1" value="" autocomplete="off" /></div>
+          </p>
+          <p>
+          <button class="btn btn-primary" type="submit">Join the Newsletter!<span class="ms-2">{{ partial "icons/arrow-right.html" }}</span></button>
+          </p>
+        </form>
+        <script src="https://cdn.sendfox.com/js/form.js" charset="utf-8"></script>
       </div>
     </div>
   </div>

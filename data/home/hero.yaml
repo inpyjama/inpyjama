@@ -2,13 +2,12 @@ enabled: true
 id: "hero"
 
 content:
-  title: "**Embedded Systems**, inPyjama!"
-  text: "Someone at the Coffee table at work mentioned that learnings Embedded Systems involved a steep learning curve! That's it! We took the challenge on and are on a mission to **lowering the barrier to learning Embedded Systems!**\n\n
-  We believe everything is **easy** if you know how to look at it.\n\n
+  title: "Ready to **Ride the Wave**?"
+  text: "The growth in jobs related to embedded systems reflects the expanding role of technology not just as enablers but as essential components within virtually every industry. From software engineers specializing in real-time operating systems and low-level programming to hardware designers skilled in circuit board layout and microchip architecture, there's a broad spectrum of roles that are expected to grow due to advancements in embedded technologies.\n
 
-  We create and curate content that will help you learn Embedded Systems with ease. Doesn't matter if you are a Student, Professional, Enthusiast, or Hacker. We have you covered!\n\n
+Moreover, the integration of AI and machine learning into these systems is forecasted to further augment their functionality and efficiency. This trend not only amplifies the need for specialized skills but also opens up new career paths for professionals with interdisciplinary expertise. In conclusion, as our world becomes more dependent on technology, so too will the demand for skilled embedded systems professionals continue to expand, driving innovation and economic growth in numerous industries."
 
-  We'll teach you the under the hood **Lower Level** stuff that you need to control the World!"
+  sub: "Join the **14000+** Subscribers!"
 
   buttonPrimary:
     label: "Explore Courses"

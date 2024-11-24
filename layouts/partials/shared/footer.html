@@ -6,7 +6,10 @@
         <p class="small text-black-61">{{ .Site.Params.description }}</p>
         <h5 class="fs-6 fw-semibold text-primary">Contact us</h5>
         {{ range .Site.Params.contact }}
-          <p class="small text-black-61 mb-1">{{ . }}</p>
+        <p class="small text-black-61 mb-1"><a class="email" href=mailto:{{ . }}>{{ . }}</a></p>
+        {{ end }}
+        {{ range .Site.Params.phone }}
+          <p class="small text-black-61 mb-1"><a class="phone" href=tel:{{ . }}>{{ . }}</a></p>
         {{ end }}
         </br>
         {{ with .Site.Params.social }}
@@ -54,7 +57,7 @@
           </p>
           <!-- no botz please -->
           <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="a_password" tabindex="-1" value="" autocomplete="off" /></div>
-          <p><button class="btn btn-outline-primary" type="submit">Subscribe<span class="ms-2">{{ partial "icons/arrow-right.html" }}</span></button></p>
+          <p><button class="btn btn-primary" type="submit">Subscribe<span class="ms-2">{{ partial "icons/arrow-right.html" }}</span></button></p>
         </form>
         <script src="https://cdn.sendfox.com/js/form.js" charset="utf-8"></script>
       </div>

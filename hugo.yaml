@@ -1,8 +1,8 @@
-baseURL: "https://inpyjama.github.io/inpyjama/"
+baseURL: "https://inpyjama.com/"
 theme: "up-business-theme"
 languageCode: "en-us"
 
-title: "inPyjama!"
+title: "Embedded Systems, inPyjama!"
 
 # googleAnalytics: ""
 
@@ -35,15 +35,17 @@ params:
   contact:
     - "support@inpyjama.com"
     - "business@inpyjama.com"
-    - "+91-9108898976, +91-9980970507"
+  phone:
+    - "+91-9108898976"
+    - "+91-9980970507"
 
-  copyright: "© 2024 Typobrahe Education LLP. All Rights Reserved."
+  copyright: "© 2024, Typobrahe Education LLP. All Rights Reserved."
 
 menus:
   main:
-    - name: "Home"
-      url: "/"
-      weight: 1
+    # - name: "Home"
+    #   url: "/"
+    #   weight: 1
     - name: "Blog"
       url: "/posts"
       weight: 2
