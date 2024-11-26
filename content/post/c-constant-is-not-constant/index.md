@@ -3,10 +3,10 @@ author = "Team, in Pyjama!"
 title = 'C: Constant Is Not Constant'
 date = "2023-04-27"
 tags = [
-    "TODO",
+    "caches", "cpu"
 ]
 categories = [
-    "TODO",
+    "system",
 ]
 
 series = ["c"]
