@@ -47,23 +47,29 @@ menus:
     #   url: "/"
     #   weight: 1
     - name: "Blog"
+      identifier: "bi-newspaper"
       url: "/posts"
       weight: 2
     - name: "YouTube"
+      identifier: "bi-youtube"
       url: "https://www.youtube.com/@inpyjama"
       weight: 3
     - name: "Discord"
+      identifier: "bi-discord"
       url: "https://discord.com/invite/embedded-systems-party-inpyjama-1165531784293912576"
       weight: 4
     - name: "Whatsapp"
+      identifier: "bi-whatsapp"
       url: "https://whatsapp.com/channel/0029VaLHkWT6buMPULyhxd1Q"
       weight: 5
     - name: "Courses"
+      identifier: "bi-mortarboard"
       url: "https://engineers.inpyjama.com/learn"
       weight: 6
 
   buttons:
     - name: "Course Login"
+      identifier: "bi-box-arrow-in-right"
       url: "https://engineers.inpyjama.com/learn/account/signin"
       weight: 5
       pre: "btn btn-primary text-light"
