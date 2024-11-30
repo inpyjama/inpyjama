@@ -1,7 +1,7 @@
-<section class="section hero py-3">
+<section class="section hero">
   <div class="container">
     <div class="row flex-column flex-xl-row-reverse">
-      <div class="col-12 col-xl-6  d-flex flex-column justify-content-center hero-image">
+      <div class="col-12 col-xl-6 d-flex flex-column justify-content-center hero-image">
         {{ partial "utilities/image-fluid" "images/hero-image.png" }}
       </div>
       <div class="col-12 col-xl-6 d-flex flex-column justify-content-center">
@@ -13,17 +13,9 @@
           <p class="text-center text-black-61 text-xl-start">{{ . | markdownify }}</p>
         {{ end }}
 
-        <!--
-        <div class="d-flex flex-column flex-xl-row">
-          {{ with .content.buttonPrimary }}
-            <a class="btn btn-primary text-light px-4 my-1" target="_blank" href="{{ .url }}">{{ .label }}</a>
-          {{ end }}
-          {{ with .content.buttonSecondary }}
-            <a class="btn btn-outline-primary px-4 my-1 ms-xl-4" target="_blank" href="{{ .url }}">{{ .label }}<span class="ms-2">{{ partial "icons/arrow-right.html" }}</span></a>
-          {{ end }}
-        </div>
-        -->
-        {{ with . }}{{ partial "utilities/mails-form.html" . }}{{ end }}
+        {{ with . }}
+          {{ partial "utilities/mails-form.html" . }}
+        {{ end }}
       </div>
     </div>
   </div>
