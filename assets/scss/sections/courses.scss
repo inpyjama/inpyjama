@@ -1,6 +1,7 @@
 .courses {
-  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.5s;
+  border-radius: 10px;
 }
 
 .courses:hover {
@@ -16,3 +17,20 @@
 // .card:hover {
 //   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
 // }
+
+.rating {
+  color: #FFB200;
+}
+
+.instructor {
+  color: #8a8a8a;
+  font-size: 1em;
+}
+
+.course-title {
+  font-size: 1.25em;
+}
+
+.course-desc {
+  font-size: 1em;
+}

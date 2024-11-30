@@ -5,17 +5,12 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
-$font-family-base: "Calibri", sans-serif;
+$font-family-base: Calibri, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
-// $primary: rgb(77, 76, 125);
-// $secondary: #27A3FF29;
-// $danger: rgb(248, 95, 115);
-// $light: #FFFFFF;
-
-$primary: rgb(47, 47, 47);
-$secondary: #08172329;
-$danger: rgb(255, 52, 79);
-$light: #FFFFFF;
+$primary:#03346E;
+$secondary: #08D9D6;
+$danger: #FF0000;
+$light: #ffffff;
 
 // scss-docs-start import-stack
 // Configuration

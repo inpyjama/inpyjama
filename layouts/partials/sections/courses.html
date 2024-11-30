@@ -16,19 +16,48 @@
     <div class="row justify-content-center g-5">
       {{ range .content.cards }}
         <div class="col-12 col-xl-4">
-          <div class="card border-0 border-radius-0 courses">
+          <div class="card courses">
             {{ with .image }}{{ partial "utilities/image-fluid.html" . }}{{ end }}
             <div class="card-body">
               {{ with .title }}
-              <h4 class="card-title text-primary pb-2">{{ . }}</h4>
+              <h4 class="card-title text-primary course-title">{{ . }}</h4>
               {{ end }}
 
               {{ with .text }}
-              <p class="card-text text-black-61 pb-2">{{ . }}</p>
+              <p class="card-text text-black-61 course-desc">{{ . }}</p>
+              {{ end }}
+
+              <span>
+                {{ with .rating }}
+                  {{$full_stars := math.Mod . 6 }}
+                  {{$half_stars := math.Div . 0.5 }}
+                  {{$half_stars := math.Mod $half_stars 2 }}
+                  {{$empty_stars := math.Add $full_stars $half_stars }}
+                  {{$empty_stars := math.Sub 5 $empty_stars }}
+
+                  {{ range $num := (seq $full_stars) }}
+                  <span class="bi bi-star-fill rating"></span>
+                  {{ end }}
+
+                  {{ range $num := (seq $half_stars) }}
+                  <span class="bi bi-star-half rating"></span>
+                  {{ end }}
+
+                  {{ range $num := (seq $empty_stars) }}
+                  <span class="bi bi-star rating"></span>
+                  {{ end }}
+                {{ end }}
+                {{ with .rating }}
+                <b>({{ . }})</b>
+                {{end}}
+              </span>
+
+              {{ with .instructor }}
+              <p class="instructor"> {{ . }} </p>
               {{ end }}
 
               {{ with .button }}
-              <a class="btn btn-outline-primary px-4" target="_blank" href="{{ .url }}">{{ .label }}</a>
+              <a class="btn btn-outline-primary" target="_blank" href="{{ .url }}">{{ .label }}</a>
               {{ end }}
             </div>
           </div>
@@ -36,7 +65,7 @@
       {{ end }}
     </div>
   </div>
-  <div class="row section-divider p-4 ">
+  <div class="row section-divider">
     <br>
   </div>
 </section>
