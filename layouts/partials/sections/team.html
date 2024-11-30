@@ -16,14 +16,7 @@
         {{ with .content.text1 }}
           <p class="text-center text-xl-start pb-4">{{ . | markdownify }}</p>
         {{ end }}
-        <div class="d-flex flex-column flex-xl-row">
-          {{ with .content.buttonPrimary }}
-            <a class="btn btn-primary text-light px-4 my-1" target="_blank" href="{{ .url }}">{{ .label }}</a>
-          {{ end }}
-          {{ with .content.buttonSecondary }}
-            <a class="btn btn-outline-primary px-4 my-1 ms-xl-4" target="_blank" href="{{ .url }}">{{ .label }}<span class="ms-2">{{ partial "icons/arrow-right.html" }}</span></a>
-          {{ end }}
-        </div>
+        {{ with . }}{{ partial "utilities/mails-form.html" . }}{{ end }}
       </div>
     </div>
     <div class="row flex-column flex-xl-row-reverse">
@@ -67,19 +60,7 @@
         </div>
       {{ end }}
     </div>
-
-    <div class="row flex-column flex-xl-row-reverse">
-      {{ with .content.text3 }}
-        <h4 class="fw-bold text-primary text-center p-4">{{ . | markdownify }}</h4>
-      {{ end }}
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-12 col-xl-6 text-center">
-        {{ with .content.button }}
-          <a class="btn btn-primary px-4" target="_blank" href="{{ .url }}">{{ .label }}<span class="ms-2">{{ partial "icons/arrow-right.html" }}</span></a>
-        {{ end }}
-      </div>
-    </div>
+    {{ with . }}{{ partial "utilities/mails-form.html" . }}{{ end }}
   </div>
   <br>
 </section>

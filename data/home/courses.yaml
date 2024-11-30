@@ -17,7 +17,7 @@ content:
     - image: "images/courses/arsenal.png"
       title: "Firmware Engineer's Arsenal!"
       text: "Collection of courses for Aspiring Embedded Systems or Firmware Engineers. Topics include - C Language, C Pointers, ARM Cortex M CPU programming, GNU Make, Linker Script and OS concepts (FreeRTOS)."
-      instructor: "Piyush Itankar"
+      instructor: "Piyush Itankar, Dev Bishnoi & Mahmad Bharmal"
       rating: 4.9
       button:
         label: "Explore the Bundle"

@@ -1,5 +1,6 @@
 {{ define "main" }}
   {{ with .Site.Data.home.hero }}{{ partial "sections/hero.html" . }}{{ end }}
+  {{ with .Site.Data.home.roadmap }}{{ partial "sections/roadmap.html" . }}{{ end }}
   {{ with .Site.Data.home.reasons }}{{ partial "sections/reasons.html" . }}{{ end }}
   {{ with .Site.Data.home.learn }}{{ partial "sections/learn.html" . }}{{ end }}
   {{ with .Site.Data.home.portfolio }}{{ partial "sections/portfolio.html" . }}{{ end }}

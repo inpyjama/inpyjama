@@ -1,0 +1,7 @@
+enabled: true
+id: "roadmap"
+
+content:
+  title: "Roadmap to Learning Embedded systems"
+  text: "If you are just starting your journey to learning Embedded systems. Do take a look at the video below."
+  video: "https://www.youtube-nocookie.com/embed/KopbRShTp_Y?si=bfoDESd0CCP_o9rO"
