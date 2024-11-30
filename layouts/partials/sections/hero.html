@@ -6,7 +6,7 @@
       </div>
       <div class="col-12 col-xl-6 d-flex flex-column justify-content-center">
         {{ with .content.title }}
-          <h3 class="hero-title fw-bold display-1 text-primary text-center text-xl-start"> $ <span id="element"></span></h3>
+          <h3 class="hero-title fw-bold display-1 text-primary text-center text-xl-start"> ❯ <span id="element"></span></h3>
         {{ end }}
 
         {{ with .content.text }}
@@ -28,9 +28,7 @@
 <script>
   var typed = new Typed('#element', {
     strings: ['Embedded Systems!',
-              'the \
-              <span class="typed-bold">inPyjama</span>\
-               way...'],
+              'the <span class="typed-bold">inPyjama</span> way...'],
     typeSpeed: 50,
     showCursor: true,
     cursorChar: "_"
