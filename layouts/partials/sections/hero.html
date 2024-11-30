@@ -6,7 +6,7 @@
       </div>
       <div class="col-12 col-xl-6 d-flex flex-column justify-content-center">
         {{ with .content.title }}
-          <h3 class="hero-title fw-bold display-1 text-primary text-center text-xl-start">{{ . | markdownify }}</h3>
+          <h3 class="hero-title fw-bold display-1 text-primary text-center text-xl-start"> $ <span id="element"></span></h3>
         {{ end }}
 
         {{ with .content.text }}
@@ -20,3 +20,26 @@
     </div>
   </div>
 </section>
+
+<!-- Load library from the CDN -->
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<!-- Setup and start animation! -->
+<script>
+  var typed = new Typed('#element', {
+    strings: ['Embedded Systems!',
+              'the \
+              <span class="typed-bold">inPyjama</span>\
+               way...'],
+    typeSpeed: 50,
+    showCursor: true,
+    cursorChar: "_"
+  });
+</script>
+
+<!-- Find this another home -->
+<style>
+  .typed-bold {
+    color: red;
+  }
+</style>
