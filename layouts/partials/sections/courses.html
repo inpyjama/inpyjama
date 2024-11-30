@@ -26,7 +26,9 @@
               {{ with .text }}
               <p class="card-text text-black-61 course-desc">{{ . }}</p>
               {{ end }}
-
+              {{ with .learners }}
+              <p class="learners"><b>{{ . }}+</b> students took this course</p>
+              {{ end }}
               <span>
                 {{ with .rating }}
                   {{$full_stars := math.Mod . 6 }}

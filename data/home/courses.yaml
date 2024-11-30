@@ -10,6 +10,7 @@ content:
       text: "Dive into the details of what Embedded Embedded Systems is and the roadmap to going about learning it. The presentation is fast paced and focused on how one can becomes a Embedded Systems Software Engineer."
       instructor: "Piyush Itankar"
       rating: 5
+      learners: 1400
       button:
         label: "Explore the Course"
         url: "https://engineers.inpyjama.com/learn/roadmap"
@@ -19,6 +20,7 @@ content:
       text: "Collection of courses for Aspiring Embedded Systems or Firmware Engineers. Topics include - C Language, C Pointers, ARM Cortex M CPU programming, GNU Make, Linker Script and OS concepts (FreeRTOS)."
       instructor: "Piyush Itankar, Dev Bishnoi & Mahmad Bharmal"
       rating: 4.9
+      learners: 1300
       button:
         label: "Explore the Bundle"
         url: "https://engineers.inpyjama.com/learn/fw-arsenal"
@@ -28,6 +30,7 @@ content:
       text: "An introduction to the ARMv8 based A class 64 bit CPUs. This course introduces the Programmer's model and registers of the ARM-A (aarch64) Architecture-based CPU."
       instructor: "Piyush Itankar"
       rating: 5
+      learners: 1400
       button:
         label: "Explore more"
         url: "https://engineers.inpyjama.com/learn/aarch64-101"
@@ -37,6 +40,7 @@ content:
       text: "Learn the assembly programming for ARM Cortex-M CPUs by writing a scheduler from scratch, without using any IDE, SDK or boiler plate code. Course is under development. Content will be added when it's ready."
       instructor: "Piyush Itankar"
       rating: 5
+      learners: 1300
       button:
         label: "Explore more"
         url: "https://engineers.inpyjama.com/learn/m-assembly"
@@ -46,6 +50,7 @@ content:
       text: "C pointers are crucial in Firmware and System Software (based on the C language) design. Linux, Unix, FreeRTOs, Zephyr, ThreadX etc kernels use C pointers heavily. This Course dives into the mental models and inner workings of pointers!"
       instructor: "Piyush Itankar"
       rating: 4.8
+      learners: 1700
       button:
         label: "Explore more"
         url: "https://engineers.inpyjama.com/learn/c-pointers"
@@ -55,6 +60,7 @@ content:
       text: "Make is a build automation tool that automatically updates files in your project based on their dependencies. It's primarily used for compiling source code, but can also be used to run other commands or perform tasks."
       instructor: "Piyush Itankar"
       rating: 5
+      learners: 1350
       button:
         label: "Explore more"
         url: "https://engineers.inpyjama.com/learn/make"
