@@ -96,16 +96,21 @@ menus:
       weight: 5
 
     - name: "Shipping and Exchange"
-      url: "/shipping"
+      url: "/refund"
       weight: 6
-
-    - name: "Contact Us"
-      url: "/contact"
-      weight: 7
 
     - name: "Disclaimer"
       url: "/disclaimer"
+      weight: 7
+
+    - name: "Contact Us"
+      url: "/contact"
       weight: 8
+
+    - name: "About Us"
+      url: "/about"
+      weight: 8
+
 
 taxonomies:
   series: "series"

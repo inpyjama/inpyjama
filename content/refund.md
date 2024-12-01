@@ -2,7 +2,6 @@
 title = "Cancellation and Refund Policy"
 description = "Cancellation and Refund Policy"
 date = "2019-02-28"
-aliases = ["refund"]
 author = "Team inPyjama"
 +++
 

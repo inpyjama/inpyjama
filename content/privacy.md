@@ -2,7 +2,6 @@
 title = "Privacy Policy"
 description = "Privacy Policy"
 date = "2019-02-28"
-aliases = ["privacy"]
 author = "Team inPyjama"
 +++
 
