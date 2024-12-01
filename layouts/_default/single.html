@@ -1,23 +1,51 @@
 {{ define "main" }}
   <section class="section blog-single py-5">
     <div class="container">
-      <div class="row justify-content-center pb-5">
-        <div class="col-12">
+      <div class="row justify-content-center">
+        <div class="col-8">
           {{ with .Title }}
-            <h2 class="display-1 fw-bold text-center text-primary pb-3">{{ . }}</h2>
+            <h2 class="display-1 fw-bold text-center text-primary pb-2">{{ . }}</h2>
           {{ end }}
+
           {{ with .Params.description }}
             <p class="text-black-61 text-center pb-3">{{ . }}</p>
           {{ end }}
         </div>
       </div>
+
       <div class="row pb-5">
         <div class="col-12 d-flex justify-content-center">
           <div class="blog-content fs-5">
             {{ .Content }}
           </div>
         </div>
-        <hr>
+      </div>
+
+      <!-- TODO: clean this up and enable -->
+      <!-- <hr>
+      <div class="row">
+        <div class="col-12 d-flex">
+        {{ with .Params }}
+          <p>
+            Author: {{ .author }}
+          </p>
+          <p>
+            Socials: <a><span>Linkedin</span></a>,
+                   <a><span>twitter</span></a>,
+                   <a><span>blog</span></a>,
+                   <a><span>email</span></a>
+          </p>
+          <p>
+            Date: {{ .date }}
+          </p>
+        {{ end }}
+      </div>
+      </div> -->
+
+      <hr>
+
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center">
         <script src="https://utteranc.es/client.js"
           repo="inpyjama/inpyjama"
           issue-term="url"
@@ -25,8 +53,7 @@
           crossorigin="anonymous"
           async>
         </script>
-      </div>
-      <div class="row pb-5">
+        </div>
       </div>
     </div>
   </section>
