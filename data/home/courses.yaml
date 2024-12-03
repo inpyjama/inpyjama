@@ -9,10 +9,10 @@ content:
       title: "Roadmap and Strategies!"
       text: "Dive into the details of what Embedded Embedded Systems is and the roadmap to going about learning it. The presentation is fast paced and focused on how one can becomes a Embedded Systems Software Engineer."
       content: ""
-      video: "5"
-      resources: "25"
-      codeexercise: "10"
-      articles: "12"
+      video: "2 hrs"
+      resources: ""
+      codeexercise: ""
+      articles: ""
       documents: "2"
       certification: true
       access: "365"
@@ -26,7 +26,14 @@ content:
     - image: "images/courses/arsenal.png"
       title: "Firmware Engineer's Arsenal!"
       text: "Collection of courses for Aspiring Embedded Systems or Firmware Engineers. Topics include - C Language, C Pointers, ARM Cortex M CPU programming, GNU Make, Linker Script and OS concepts (FreeRTOS)."
-      content: "15 courses. 15+ hrs of Video, ebooks and more"
+      content: "Collection of 15 Courses"
+      video: "30 hrs+"
+      resources: ""
+      codeexercise: ""
+      articles: ""
+      documents: "2+"
+      certification: true
+      access: "365"
       instructor: "Piyush Itankar, Dev Bishnoi & Mahmad Bharmal"
       rating: 4.9
       learners: 1300
@@ -37,7 +44,14 @@ content:
     - image: "images/courses/aarch64.png"
       title: "ARMv8-A - An Introduction to Aarch64"
       text: "An introduction to the ARMv8 based A class 64 bit CPUs. This course introduces the Programmer's model and registers of the ARM-A (aarch64) Architecture-based CPU."
-      content: "5Hr+ of Video and Assignment"
+      content: "19 lessons"
+      video: "1 hr 48 mins+"
+      resources: ""
+      codeexercise: "12"
+      articles: ""
+      documents: ""
+      certification: true
+      access: "365"
       instructor: "Piyush Itankar"
       rating: 5
       learners: 1400
@@ -48,7 +62,14 @@ content:
     - image: "images/courses/arm-m.png"
       title: "ARM Cortex-M - Baremetal Assembly Programming"
       text: "Learn the assembly programming for ARM Cortex-M CPUs by writing a scheduler from scratch, without using any IDE, SDK or boiler plate code. Course is under development. Content will be added when it's ready."
-      content: "5Hr+ of Video and Assignment"
+      content: "28 lessons, 6 trials"
+      video: "7 hrs 42 mins+"
+      resources: "3"
+      codeexercise: ""
+      articles: ""
+      documents: ""
+      certification: true
+      access: "365"
       instructor: "Piyush Itankar"
       rating: 5
       learners: 1300
@@ -59,7 +80,14 @@ content:
     - image: "images/courses/c-pointers.png"
       title: "C Pointers - Insights & Use in Design"
       text: "C pointers are crucial in Firmware and System Software (based on the C language) design. Linux, Unix, FreeRTOs, Zephyr, ThreadX etc kernels use C pointers heavily. This Course dives into the mental models and inner workings of pointers!"
-      content: "5Hr+ of Video and Assignment"
+      content: "33 lessons"
+      video: "5 hrs 17 mins+"
+      resources: "15"
+      codeexercise: "24"
+      articles: ""
+      documents: ""
+      certification: true
+      access: "365"
       instructor: "Piyush Itankar"
       rating: 4.8
       learners: 1700
@@ -70,10 +98,71 @@ content:
     - image: "images/courses/make.png"
       title: "GNU make and Makefile"
       text: "Make is a build automation tool that automatically updates files in your project based on their dependencies. It's primarily used for compiling source code, but can also be used to run other commands or perform tasks."
-      content: "5Hr+ of Video and Assignment"
+      content: "14 lessons"
+      video: "2.5"
+      resources: ""
+      codeexercise: "1"
+      articles: ""
+      documents: ""
+      certification: true
+      access: "365"
       instructor: "Piyush Itankar"
       rating: 5
       learners: 1350
       button:
         label: "Explore more"
         url: "https://engineers.inpyjama.com/learn/make"
+
+    - image: "images/courses/linux101.png"
+      title: "Linux Device Drivers 101"
+      text: "Learn the basics of how to write Device Drivers and have the user application invoke the driver functionality. Designed for those seeking a hands-on introduction to the topic..."
+      content: "24 lessons"
+      video: "5 hrs 19 mins+"
+      resources: ""
+      codeexercise: "1"
+      articles: ""
+      documents: ""
+      certification: true
+      access: "365"
+      instructor: "Piyush Itankar"
+      rating: 4.9
+      learners: 1350
+      button:
+        label: "Explore more"
+        url: "https://engineers.inpyjama.com/learn/ldd-101"
+
+    - image: "images/courses/ld.png"
+      title: "Linker Scripts for Firmware and Systems Engineers"
+      text: "The black magic every Firmware and Systems Engineer should know! This hands, it dives into the gory details of writing linker scripts (based on GNU LD)."
+      content: "30 lessons"
+      video: "4 hrs+"
+      resources: ""
+      codeexercise: "1"
+      articles: ""
+      documents: ""
+      certification: true
+      access: "365"
+      instructor: "Piyush Itankar"
+      rating: 5
+      learners: 1350
+      button:
+        label: "Explore more"
+        url: "https://engineers.inpyjama.com/learn/ld"
+
+    - image: "images/courses/m101.png"
+      title: "ARM Cortex-M - An Introduction"
+      text: "An introduction to ARM Cortex-M controllers, covering their key characteristics, advantages, and applications. This is followed by a comprehensive overview of the programmers' model."
+      content: "9 lessons"
+      video: "1 hr 8 mins+"
+      resources: ""
+      codeexercise: "5"
+      articles: ""
+      documents: ""
+      certification: true
+      access: "365"
+      instructor: "Piyush Itankar"
+      rating: 4.7
+      learners: 1350
+      button:
+        label: "Explore more"
+        url: "https://engineers.inpyjama.com/learn/ld"
