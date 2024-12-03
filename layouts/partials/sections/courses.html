@@ -17,18 +17,19 @@
       {{ range .content.cards }}
         <div class="col-12 col-xl-4">
           <div class="card courses">
-            {{ with .image }}{{ partial "utilities/image-fluid.html" . }}{{ end }}
             <div class="card-body">
               {{ with .title }}
               <h4 class="card-title text-primary course-title">{{ . }}</h4>
               {{ end }}
+            </div>
 
+            {{ with .image }}{{ partial "utilities/image-fluid.html" . }}{{ end }}
+
+            <div class="card-body">
               {{ with .text }}
               <p class="card-text text-black-61 course-desc">{{ . }}</p>
               {{ end }}
-              {{ with .learners }}
-              <p class="learners"><b>{{ . }}+</b> students took this course</p>
-              {{ end }}
+
               <span>
                 {{ with .rating }}
                   {{$full_stars := math.Mod . 6 }}
@@ -54,8 +55,18 @@
                 {{end}}
               </span>
 
+              {{ with .content }}
+              <p class="card-text text-black-61 course-content"><span class="bi bi-check2-square"></span>&nbsp {{ . }}</p>
+              {{ end }}
+              {{ with .learners }}
+              <p class="learners"><span class="bi bi-people"></span>&nbsp {{ . }}+ enrolled</p>
+              {{ end }}
+
               {{ with .instructor }}
-              <p class="instructor"> {{ . }} </p>
+              <p class="instructor">
+                <span class="bi bi-person-video3"></span>&nbsp
+                {{ . }}
+              </p>
               {{ end }}
 
               {{ with .button }}
