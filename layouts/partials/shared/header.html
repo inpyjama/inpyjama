@@ -1,14 +1,6 @@
-<!-- TODO: abstract this -->
-<div class="offers">
-  <div>
-    We just turned profitable and recovered all expenses. To celebrate we are giving away a discount!
-  </div>
-  Use code <b>BREAKEVEN40</b> on <a style="color:white;" href="https://engineers.inpyjama.com/learn/fw-arsenal" target="_">Firmware Engineeer's Arsenal</a> to get a 40% off! end in:
-  <div>
-    <h3 id="countdown">-</h3>
-  </div>
-</div>
+<!-- Enable this if there is an offer -->
 
+{{ partial "utilities/offers.html" .Site.Params.offer}}
 
 <nav class="navbar navbar-expand-xl navbar-light bg-light">
   <div class="container">
@@ -37,49 +29,3 @@
     </div>
   </div>
 </nav>
-
-<!-- TODO: Find this a new home -->
-<style>
-  .offers {
-    padding: 1em;
-    background-color: #03346E;
-    text-align: center;
-    vertical-align: middle;
-    color: white;
-    font-size: 1.25em;
-  }
-</style>
-
-<script>
-  // Set the date we're counting down to
-  var countDownDate = new Date("Dec 2, 2024 23:59:59").getTime();
-
-  // Update the count down every 1 second
-  var x = setInterval(function() {
-
-    // Get today's date and time
-    var now = new Date().getTime();
-
-    // Find the distance between now and the count down date
-    var distance = countDownDate - now;
-
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    // Display the result in the element with id="demo"
-    document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
-
-    // If the count down is finished, write some text
-    if (distance < 0) {
-      clearInterval(x);
-      const elements = document.getElementsByClassName("offers");
-      while(elements.length > 0){
-        elements[0].parentNode.removeChild(elements[0]);
-      }
-    }
-  }, 1000);
-  </script>
