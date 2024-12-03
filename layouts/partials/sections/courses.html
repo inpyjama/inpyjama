@@ -58,6 +58,35 @@
               {{ with .content }}
               <p class="card-text text-black-61 course-content"><span class="bi bi-check2-square"></span>&nbsp {{ . }}</p>
               {{ end }}
+
+              {{ with .video }}
+              <p class="card-text text-black-61 course-content"><span class="bi bi-camera-video"></span>&nbsp {{ . }} hrs+ Lectures</p>
+              {{ end }}
+
+              {{ with .resources }}
+              <p class="card-text text-black-61 course-content"><span class="bi bi-cloud-arrow-down"></span>&nbsp {{ . }} downloadable resources</p>
+              {{ end }}
+
+              {{ with .codeexercise }}
+              <p class="card-text text-black-61 course-content"><span class="bi bi-bookmark-check"></span>&nbsp {{ . }} exercises</p>
+              {{ end }}
+
+              {{ with .articles }}
+              <p class="card-text text-black-61 course-content"><span class="bi bi-file-earmark-text"></span>&nbsp {{ . }} articles</p>
+              {{ end }}
+
+              {{ with .documents }}
+              <p class="card-text text-black-61 course-content"><span class="bi bi-file-earmark-pdf"></span>&nbsp {{ . }} files</p>
+              {{ end }}
+
+              {{ with .certification }}
+              <p class="card-text text-black-61 course-content"><span class="bi bi-postcard"></span>&nbsp Certificate on completion</p>
+              {{ end }}
+
+              {{ with .access }}
+              <p class="card-text text-black-61 course-content"><span class="bi bi-clock"></span>&nbsp Online access for {{ . }} days</p>
+              {{ end }}
+
               {{ with .learners }}
               <p class="learners"><span class="bi bi-people"></span>&nbsp {{ . }}+ enrolled</p>
               {{ end }}
@@ -77,8 +106,5 @@
         </div>
       {{ end }}
     </div>
-  </div>
-  <div class="row section-divider">
-    <br>
   </div>
 </section>
