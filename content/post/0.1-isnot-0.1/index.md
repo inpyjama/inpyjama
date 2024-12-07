@@ -3,10 +3,10 @@ author = "Team, in Pyjama!"
 title = '0.1 is not 0.1. Yups!'
 date = "2023-04-28"
 tags = [
-    "c",
+    "const"
 ]
 categories = [
-    "TODO",
+    "system", "c language"
 ]
 
 series = ["c"]

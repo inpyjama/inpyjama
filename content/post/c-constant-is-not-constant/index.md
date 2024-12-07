@@ -6,7 +6,7 @@ tags = [
     "caches", "cpu"
 ]
 categories = [
-    "system",
+    "system", "c language"
 ]
 
 series = ["c"]
