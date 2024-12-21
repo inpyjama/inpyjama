@@ -48,7 +48,7 @@ int main() {
 }
 ```
 
-![](2.jpg)
+![](2.jpg "fig 2: the fptr variable pointing to the address where the instructions for the random_function is saved.")
 
 The output should be - `Hello, World!`. What happened here was, the `fptr` variable was of the type `function_ptr_t` which is a function pointer type. The `fptr` was pointing to the address where the code of `random_function` was saved. When we dereference the pointer with the syntax - `fptr()` the address is loaded into the program counter and the CPU fetches the instructions to execute.
 
