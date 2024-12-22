@@ -46,7 +46,7 @@ A contiguous memory space is allocated for array elements and can be accessed vi
 
 !["Memory layout"](2.jpg)
 
-> 💡 The array size is a compile-time constant!
+> The array size is a compile-time constant!
 
 The `i`th element of an array can be accessed in a constant time via `arr[i]`. It is located at the address `arr + i * sizeof(int)`. Here, the `arr` is the address of the first element in the array, in the above case `0x400`.
 
@@ -56,7 +56,7 @@ According to the pointer arithmetic `arr + i` will be calculated to `arr + i * s
 
 !["arrays.c"](3.png)
 
-> 🤯 Note: `arr[i] = *(arr + i) = *(i + arr) = i[arr]`
+> Note: `arr[i] = *(arr + i) = *(i + arr) = i[arr]`
 
 One can calculate the array size using sizeof() function. Where does array size come from? Is it stored anywhere?
 

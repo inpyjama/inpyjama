@@ -118,7 +118,7 @@ If this looks right, the next question we should ask is - **what happens if a li
 
 ![](7.jpg)
 
-> 💡 When a function takes as a parameter a function pointer, the function pointer is called the Callback function.
+> When a function takes as a parameter a function pointer, the function pointer is called the Callback function.
 
 ## Example: Interrupt Handlers
 
@@ -134,4 +134,4 @@ Say, a device driver code does something like so - `register_interrupt_handler(4
 
 Notice that, the interrupt management library, once any interrupt occurs, just reads the interrupt number and then calls the corresponding registered function pointer - the interrupt handler. After the handler execution is complete, it clears the interrupt. The key is -
 
-> 💡 Function pointers are used by the library to call the user functions :)
+> Function pointers are used by the library to call the user functions :)

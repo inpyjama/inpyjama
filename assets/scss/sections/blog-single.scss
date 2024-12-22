@@ -12,7 +12,6 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
-    border-radius: 10px;
   }
 }
 
@@ -40,10 +39,17 @@ blockquote {
   border-radius: 3px;
   font-family: monospace;
   font-size: 0.85em;
+  border-left-style: solid;
+  border-left-color: rgb(0, 144, 206);
+  border-left-width: 0.25em;
+  text-align: left;
 }
 
 code {
   font-family: monospace !important;
+  font-size: 0.8em;
+  font-weight: 600;
+  color: rgb(188, 52, 18);
 }
 
 blockquote > p {
