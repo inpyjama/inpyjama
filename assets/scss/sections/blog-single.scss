@@ -46,8 +46,19 @@ blockquote {
 }
 
 .blog-content .highlight pre {
+  margin: 0em 2% 0em 2%;
   padding: 1em;
-  border-radius: 0px;
+  border-radius: 5px;
+}
+
+figcaption {
+  text-align: center;
+  color: rgb(103, 103, 103);
+  /* font-style: italic; */
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-family: monospace;
+  font-size: 0.85em;
 }
 
 code {

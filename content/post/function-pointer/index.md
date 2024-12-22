@@ -28,11 +28,11 @@ In this post, we explore what a function pointer is, what it really means for th
 
 Function pointers are pointers that point to code. When these are dereferenced, the fetched data is treated like instructions and the CPU executes them.
 
-> 💡 When we dereference a function pointer, the PC register in the CPU is set to the address held by the pointer.
+> When we dereference a function pointer, the PC register in the CPU is set to the address held by the pointer.
 
 Consider `typedef void (*function_ptr_t)(void);` to be the function pointer type. Because of the `typedef` keyword, the `function_ptr_t` is treated like a new type. As per this definition, the pointer is to return nothing and takes no parameters. Try the following code -
 
-```c { title = "main.c" }
+```c { title = "main.c - function pointer created as a global variable", verbatim=false }
 #include <stdio.h>
 
 typedef void (*function_ptr_t)(void);
@@ -66,7 +66,7 @@ The general syntax is `return type (* function pointer name)(parameter list)`. T
 
 Using `typedef` is not strictly required, if we decide not to use it, the function pointer variable declaration will be as in the code below. Notice how the syntax is long and hard to read.
 
-```c
+```c { title = "main.c - function pointer defined within a function", verbatim=false }
 #include <stdio.h>
 
 int add(int x, int y) {
@@ -86,7 +86,7 @@ int main() {
 
 `typedef` will create a new type for us which happens to be called fn. We can use fn just like any other data type, as used to define `fpt`. This as you see, is more readable.
 
-```c
+```c { title = "main.c - function pointer defined as a new type **fn** using the **typedef** keyword.", verbatim=false }
 #include <stdio.h>
 
 typedef int (*fn)(int a, int b);

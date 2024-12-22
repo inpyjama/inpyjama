@@ -7,14 +7,3 @@
 {{ else }}
 <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" />
 {{ end }}
-
-<style>
-  figcaption {
-    text-align: center;
-    color: rgb(103, 103, 103);
-    /* font-style: italic; */
-    margin-top: 10px;
-    font-family: monospace;
-    font-size: 0.85em;
-  }
-</style>
