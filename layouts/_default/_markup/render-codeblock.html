@@ -1,0 +1,26 @@
+{{- $isVerbatim := true -}}
+{{- if isset .Attributes "verbatim" -}}
+{{- $isVerbatim = .Attributes.verbatim -}}
+{{- end -}}
+<figure class="highlight">
+
+  {{- with .Attributes.title }}
+  <figcaption>
+    {{- if $isVerbatim -}}
+    <span>{{ . }}</span>
+    {{- else -}}
+    <span>{{ . | markdownify }}</span>
+    {{- end -}}
+  </figcaption>
+  {{- end }}
+
+  {{- if transform.CanHighlight .Type }}
+  <pre tabindex="0" class="chroma" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;" ><code class="language-{{ .Type }}" data-lang="{{ .Type }}">
+      {{- with transform.HighlightCodeBlock . -}}
+      {{ .Inner }}
+      {{- end -}}
+    </code></pre>
+  {{- else }}
+  <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-{{ .Type }}" data-lang="{{ .Type }}">{{ .Inner }}</code></pre>
+  {{- end }}
+</figure>

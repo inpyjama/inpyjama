@@ -32,7 +32,7 @@ Function pointers are pointers that point to code. When these are dereferenced, 
 
 Consider `typedef void (*function_ptr_t)(void);` to be the function pointer type. Because of the `typedef` keyword, the `function_ptr_t` is treated like a new type. As per this definition, the pointer is to return nothing and takes no parameters. Try the following code -
 
-```c
+```c { title = "main.c" }
 #include <stdio.h>
 
 typedef void (*function_ptr_t)(void);
@@ -48,13 +48,13 @@ int main() {
 }
 ```
 
-![](2.jpg "fig 2: the fptr variable pointing to the address where the instructions for the random_function is saved.")
-
 The output should be - `Hello, World!`. What happened here was, the `fptr` variable was of the type `function_ptr_t` which is a function pointer type. The `fptr` was pointing to the address where the code of `random_function` was saved. When we dereference the pointer with the syntax - `fptr()` the address is loaded into the program counter and the CPU fetches the instructions to execute.
 
-![](3.png)
+![](2.jpg "fig 2: the fptr variable pointing to the address where the instructions for the random_function is saved.")
 
 Hopefully, you are convinced how a function pointer works. Now let's look at some more details and use cases.
+
+![](3.png)
 
 # The Syntax
 

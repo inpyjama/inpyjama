@@ -45,11 +45,16 @@ blockquote {
   text-align: left;
 }
 
+.blog-content .highlight pre {
+  padding: 1em;
+  border-radius: 0px;
+}
+
 code {
   font-family: monospace !important;
-  font-size: 0.8em;
-  font-weight: 600;
-  color: rgb(188, 52, 18);
+  font-size: 0.85em !important;
+  // font-weight: 600;
+  color: rgb(200, 0, 10);
 }
 
 blockquote > p {

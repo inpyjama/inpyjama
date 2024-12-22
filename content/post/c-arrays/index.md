@@ -38,7 +38,7 @@ An array can be defined by specifying the initial value of the array elements, t
 
 !["Array definitions and declarations."](1.png)
 
-> 💡 C99 and beyond support dynamic array declaration. The size of the array depends on the user-provided input.
+> C99 and beyond support dynamic array declaration. The size of the array depends on the user-provided input.
 
 ### Memory Layout
 
