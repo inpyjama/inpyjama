@@ -18,7 +18,7 @@ categories = [
 ]
 
 series = ["Computer Architecture"]
-images = ["cpu-pantries-caches/1.jpg"]
+images = ["/post/cpu-pantries-caches/1.jpg"]
 +++
 
 What is common between Chefs and CPUs in terms of how they strive for efficiency? 🥸

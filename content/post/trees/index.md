@@ -18,7 +18,7 @@ categories = [
 ]
 
 series = ["tree"]
-images = ["trees/1.jpg"]
+images = ["/post/trees/1.jpg"]
 +++
 
 Data structures are extensively used in Embedded systems! This post talks about the use of trees in power management.

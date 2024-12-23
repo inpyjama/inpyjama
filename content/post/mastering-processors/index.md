@@ -18,7 +18,7 @@ categories = [
 ]
 
 series = ["tips"]
-images = ["mastering-processors/1.jpg"]
+images = ["/post/mastering-processors/1.jpg"]
 +++
 
 Any time I have to work with a new CPU architecture, I look for the details on the four area discussed below.

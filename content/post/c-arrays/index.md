@@ -12,7 +12,7 @@ categories = [
 ]
 
 series = ["c"]
-images = ["c-arrays/hero.webp"]
+images = ["/post/c-arrays/hero.webp"]
 
 linkedin = "https://www.linkedin.com/in/dev-bishnoi-468596126/"
 twitter = ""

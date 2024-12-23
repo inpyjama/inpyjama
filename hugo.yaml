@@ -8,6 +8,11 @@ title: "Embedded Systems, inPyjama!"
 
 summaryLength: 20
 
+pagination:
+  disableAliases: false
+  pagerSize: 30
+  path: page
+
 params:
   title: "inPyjama!"
   description: "Everything is simple if you know how to look at it!"
@@ -119,7 +124,7 @@ menus:
 
     - name: "About Us"
       url: "/about"
-      weight: 8
+      weight: 9
 
 
 taxonomies:

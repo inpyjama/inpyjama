@@ -18,7 +18,7 @@ categories = [
 ]
 
 series = ["c"]
-images = ["c-constant-is-not-constant/1.webp"]
+images = ["/post/c-constant-is-not-constant/1.webp"]
 +++
 
 `const` does not mean that the variable is constant. In this post, we explore the true meaning of the const qualifier and its implications.

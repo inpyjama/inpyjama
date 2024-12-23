@@ -18,7 +18,7 @@ categories = [
 ]
 
 series = ["c"]
-images = ["0.1-isnot-0.1/1.webp"]
+images = ["/post/0.1-isnot-0.1/1.webp"]
 +++
 
 Computers can't store `0.1` accurately. It is stored as `0.1000000015`! In this post we explore and take a look at what is really going on.

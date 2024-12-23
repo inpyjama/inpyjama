@@ -19,7 +19,7 @@ categories = [
 ]
 
 series = ["C Language"]
-images = ["function-pointer/1.webp"]
+images = ["/post/function-pointer/1.webp"]
 +++
 
 In this post, we explore what a function pointer is, what it really means for the machine, how to define it, and how to use it.

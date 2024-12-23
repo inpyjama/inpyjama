@@ -18,7 +18,7 @@ categories = [
 ]
 
 series = ["fpga"]
-images = ["fpga-for-the-rest-of-us/1.webp"]
+images = ["/post/fpga-for-the-rest-of-us/1.webp"]
 +++
 
 FPGAs can be programmed to become digital circuit of choice. The code becomes the hardware! We explore the mechanics behind how the FPGA might be able to implement circuits.

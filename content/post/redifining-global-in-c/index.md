@@ -18,7 +18,7 @@ categories = [
 ]
 
 series = ["c"]
-images = ["redifining-global-in-c/1.webp"]
+images = ["/post/redifining-global-in-c/1.webp"]
 +++
 
 This post explores how redefinition of a symbol may be possible when using the C language.

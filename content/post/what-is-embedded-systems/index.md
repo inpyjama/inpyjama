@@ -18,7 +18,7 @@ categories = [
 ]
 
 series = ["tips"]
-images = ["what-is-embedded-systems/1.jpg"]
+images = ["/post/what-is-embedded-systems/1.jpg"]
 +++
 
 Embedded systems typically have a "sense the environment", "evaluate" and "do something to the environment" loop. The intention is to sense the environment and then influence it to get the desired effect.
