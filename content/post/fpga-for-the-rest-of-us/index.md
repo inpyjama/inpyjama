@@ -1,6 +1,15 @@
 +++
 title = 'FPGAs for the rest of us'
 date = "2023-04-22"
+
+author = "Piyush Itankar"
+authorImage ="teams/piyush.jpg"
+preferred = "https://x.com/dstreetdogg"
+linkedin = "https://www.linkedin.com/in/streetdogg/"
+twitter = "https://x.com/dstreetdogg"
+blog = "itankar.com"
+email = "piyush@inpyjama.com"
+
 tags = [
     "fpga",
 ]

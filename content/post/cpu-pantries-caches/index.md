@@ -1,7 +1,15 @@
 +++
-author = "Team, in Pyjama!"
 title = 'CPUs, Pantries, and Caches'
 date = "2023-04-30"
+
+author = "Mahmad Bharmal"
+authorImage =""
+preferred = ""
+linkedin = ""
+twitter = ""
+blog = ""
+email = "mahmad@inpyjama.com"
+
 tags = [
     "TODO",
 ]

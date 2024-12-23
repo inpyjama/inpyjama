@@ -1,7 +1,15 @@
 +++
-author = "Team, in Pyjama!"
 title = 'Hardware Development Using FPGA'
 date = "2023-05-13"
+
+author = "Piyush Itankar"
+authorImage ="teams/piyush.jpg"
+preferred = "https://x.com/dstreetdogg"
+linkedin = "https://www.linkedin.com/in/streetdogg/"
+twitter = "https://x.com/dstreetdogg"
+blog = "itankar.com"
+email = "piyush@inpyjama.com"
+
 tags = [
     "hardware",
 ]

@@ -16,11 +16,13 @@
             {{ with .Params }}
 
             {{ if .author }}
-            <b>{{ .author }} </b> |
+            <a class="author-link" href="{{ .preferred }}" target="_blank">
+              {{ if .authorImage }}<img class="author-image" src="/images/{{ .authorImage }}"/> {{ end }}
+              <b>{{ .author }} </b></a> |
             {{ end }}
 
             {{ if .blog }}
-            <a href="mailto:{{ .blog }}" target="_blank"><span class="bi bi-globe2"></span></a>&nbsp;
+            <a href="https://{{ .blog }}" target="_blank"><span class="bi bi-globe2"></span></a>&nbsp;
             {{ end }}
 
             {{ if .email }}
@@ -41,10 +43,11 @@
             {{ $t = time.AsTime $t }}
             {{ $format := "2 Jan, 2006" }}
             <b> {{ $t.Format $format }} </b>
+
+            <br><br>
           {{ end }}
           {{ end }}
           </div>
-          <br>
 
           <div class="blog-content fs-5">
             {{ .Content }}
@@ -104,6 +107,16 @@
 
     .post-author {
       align-items: left;
+      display: inline;
+    }
+
+    .author-link {
+      text-decoration: none !important;
+    }
+
+    .author-image {
+      max-height: 1em;
+      border-radius: 50%;
     }
 
     @media only screen and (max-width: 1024px) {

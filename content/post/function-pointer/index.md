@@ -3,6 +3,12 @@ date  = "2024-04-09T14:42:48+05:30"
 title = 'Function Pointers - Everything you need to know!'
 
 author = "Piyush Itankar"
+authorImage ="teams/piyush.jpg"
+preferred = "https://x.com/dstreetdogg"
+linkedin = "https://www.linkedin.com/in/streetdogg/"
+twitter = "https://x.com/dstreetdogg"
+blog = "itankar.com"
+email = "piyush@inpyjama.com"
 
 tags = [
     "c", "pointers", "function pointers"
@@ -14,11 +20,6 @@ categories = [
 
 series = ["C Language"]
 images = ["function-pointer/1.webp"]
-
-linkedin = "https://www.linkedin.com/in/streetdogg/"
-twitter = "https://x.com/dstreetdogg"
-blog = "itankar.com"
-email = "piyush@inpyjama.com"
 +++
 
 In this post, we explore what a function pointer is, what it really means for the machine, how to define it, and how to use it.

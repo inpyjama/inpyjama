@@ -1,8 +1,6 @@
 +++
 title = "Cancellation and Refund Policy"
 description = "Cancellation and Refund Policy"
-date = "2019-02-28"
-author = "Team inPyjama"
 +++
 
 Thank you for shopping at engineers.inpyjama.com/learn

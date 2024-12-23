@@ -1,8 +1,6 @@
 +++
 title = "About Us"
 description = "Lowering the barrier to learning Embedded System"
-date = "2019-02-28"
-author = "Team inPyjama"
 +++
 
 We curate content on Embedded Systems to help our readers (beginners or professionals) become better engineers and grow as a professional (anxiety-free). Topics include -

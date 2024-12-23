@@ -1,8 +1,6 @@
 +++
 title = "Disclaimer"
 description = "Interpretation and Definitions"
-date = "2019-02-28"
-author = "Team inPyjama"
 +++
 
 ## Interpretation

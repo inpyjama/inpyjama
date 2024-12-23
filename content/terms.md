@@ -1,8 +1,6 @@
 +++
 title = "Terms and Conditions"
 description = "Terms and Conditions"
-date = "2019-02-28"
-author = "Hugo Authors"
 +++
 
 These Terms of Use set out the terms and conditions for use of this Embedded Systems, in Pyjama! (**“Website”**) and any content, Public Forums, or services offered on or through the Website and/or through any mobile application(s) (**“Application”**) (collectively referred to as the **“Platform”**).

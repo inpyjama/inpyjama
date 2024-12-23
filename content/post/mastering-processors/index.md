@@ -1,6 +1,15 @@
 +++
 title = '4 things to look for to master any Processor!'
 date = "2023-04-21"
+
+author = "Piyush Itankar"
+authorImage ="teams/piyush.jpg"
+preferred = "https://x.com/dstreetdogg"
+linkedin = "https://www.linkedin.com/in/streetdogg/"
+twitter = "https://x.com/dstreetdogg"
+blog = "itankar.com"
+email = "piyush@inpyjama.com"
+
 tags = [
     "tips",
 ]
@@ -34,7 +43,7 @@ Exception Handling is the mechanism by which a processor responds to events that
 
 To master Exception Handling, it is essential to understand the different types of exceptions and their causes. Typically the CPU, because it has to jump to a different code called the - Handler Routine or Interrupt Subroutine (ISR) has to save the CPU's current state.
 
-`The CPU state in contained in the configuration and general purpose registers which is part of - The programmer's model of the CPU. Knowing how the CPU at the hardware state-machine level; enters and exits an interrupt handler enables one to design and write the event handling part of the firmware/code efficiently.`
+> The CPU state in contained in the configuration and general purpose registers which is part of - The programmer's model of the CPU. Knowing how the CPU at the hardware state-machine level; enters and exits an interrupt handler enables one to design and write the event handling part of the firmware/code efficiently.
 
 Typically there would also be a state diagram describing the various states that an interrupt can be, for example -
 - Pending.
