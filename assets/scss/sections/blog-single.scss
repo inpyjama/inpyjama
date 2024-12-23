@@ -63,9 +63,14 @@ figcaption {
 
 code {
   font-family: monospace !important;
-  font-size: 0.85em !important;
-  // font-weight: 600;
-  color: rgb(200, 0, 10);
+  font-size: .85em !important;
+  color: #c8000a;
+  background: #ffffe8;
+  padding: 0.0125em;
+  border-radius: 2px;
+  border-style: solid;
+  border-width: thin;
+  border-color: #ffedba;
 }
 
 blockquote > p {
