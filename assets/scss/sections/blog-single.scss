@@ -73,6 +73,12 @@ code {
   border-color: #ffedba;
 }
 
+pre > code {
+  font-family: monospace !important;
+  padding: 0px;
+  border-style: none;
+}
+
 blockquote > p {
   padding: 0px;
   margin: 0px;
