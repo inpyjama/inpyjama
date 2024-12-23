@@ -12,6 +12,40 @@
             <p class="text-black-61 text-center pb-3">{{ . }}</p>
           {{ end }}
 
+          <div class="post-author">
+            {{ with .Params }}
+
+            {{ if .author }}
+            <b>{{ .author }} </b> |
+            {{ end }}
+
+            {{ if .blog }}
+            <a href="mailto:{{ .blog }}" target="_blank"><span class="bi bi-globe2"></span></a>&nbsp;
+            {{ end }}
+
+            {{ if .email }}
+            <a href="mailto:{{ .email }}" target="_blank"><span class="bi bi-envelope"></span></a>&nbsp;
+            {{ end }}
+
+            {{ if .linkedin }}
+            <a href="{{ .linkedin }}" target="_blank"><span class="bi bi-linkedin"></span></a>&nbsp;
+            {{ end }}
+
+            {{ if .twitter }}
+            <a href="{{ .twitter }}" target="_blank"><span class="bi bi-twitter-x"></span></a>&nbsp;
+            {{ end }}
+
+            {{ with .date }}
+            <br>
+            {{ $t := . }}
+            {{ $t = time.AsTime $t }}
+            {{ $format := "2 Jan, 2006" }}
+            <b> {{ $t.Format $format }} </b>
+          {{ end }}
+          {{ end }}
+          </div>
+          <br>
+
           <div class="blog-content fs-5">
             {{ .Content }}
 
@@ -68,6 +102,10 @@
       margin: 0px;
     }
 
+    .post-author {
+      align-items: left;
+    }
+
     @media only screen and (max-width: 1024px) {
       .content {
       top:0px;
@@ -82,5 +120,3 @@
     }
   </style>
 {{ end }}
-
-

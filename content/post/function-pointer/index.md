@@ -15,8 +15,8 @@ categories = [
 series = ["C Language"]
 images = ["function-pointer/1.webp"]
 
-linkedin = ""
-twitter = ""
+linkedin = "https://www.linkedin.com/in/streetdogg/"
+twitter = "https://x.com/dstreetdogg"
 blog = "itankar.com"
 email = "piyush@inpyjama.com"
 +++
