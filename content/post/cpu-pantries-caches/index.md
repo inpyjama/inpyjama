@@ -4,17 +4,17 @@ date = "2023-04-30"
 
 author = "Mahmad Bharmal"
 authorImage ="teams/mahmad.jpeg"
-preferred = ""
-linkedin = ""
+preferred = "https://www.linkedin.com/in/mahmadbharmal/"
+linkedin = "https://www.linkedin.com/in/mahmadbharmal/"
 twitter = ""
 blog = ""
 email = "mahmad@inpyjama.com"
 
 tags = [
-    "TODO",
+    "caches",
 ]
 categories = [
-    "TODO",
+    "cpu", "computer architecture"
 ]
 
 series = ["Computer Architecture"]
@@ -30,13 +30,11 @@ To solve this problem, you decide to set up a small pantry right next to your co
 
 A very similar strategy is applied to the computer systems as well. In order to understand it better we need to go through the memory hierarchy.
 
----
-
 ## Memory Hierarchy
 
 Memory hierarchy is a system of different memory types, each with its own characteristics, that work together to store and access data in a computer system. The memory hierarchy typically includes several levels of memory, each with different capacities, access speeds, and costs.
 
-![](1.jpg)
+![](1.jpg "fig 1. Various storage elements in an SoC and the speed, cost and size comparision.")
 
 ### CPU Registers
 
@@ -58,11 +56,11 @@ Finally, at the bottom of the memory hierarchy is secondary storage, which inclu
 
 The memory hierarchy is a system of different memory types, each with its own speed, capacity, and cost characteristics. The CPU's registers are at the top of the hierarchy, followed by caches, main memory, and finally, secondary storage. Each level of the hierarchy is designed to provide a balance of speed, capacity, and cost, to ensure that the system runs as efficiently as possible. The following table may help quantify these characteristics.
 
-![](2.jpg)
+![](2.jpg "fig 2. Access time. The further the storage element, the more the access time.")
 
-![](3.jpg)
+![](3.jpg "fig 3. Typical latency and storage size comparison")
 
-💬 Why can't all memory be CPU registers?
+## Why can't all memory be CPU registers?
 
 1. It seems evident that the fastest of memories are CPU registers and caches. It is natural to be greedy and ask why can't every memory be made like registers or caches to have the highest access speeds?
 1. Physics prevents us from doing that! We'll peel this Onion in later posts :)

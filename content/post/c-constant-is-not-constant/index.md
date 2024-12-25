@@ -24,7 +24,7 @@ images = ["/post/c-constant-is-not-constant/1.webp"]
 `const` does not mean that the variable is constant. In this post, we explore the true meaning of the const qualifier and its implications.
 <!--more-->
 
-![](1.webp)
+![](1.webp "fig 1. `c` as a variable is supposed to be a const, but it can be modified with pointer magic...")
 
 In C, `const` is a type qualifier that is used to specify that a variable's value cannot be modified after it has been initialized. The const type of variable is a read-only variable, meaning that it can be read but cannot be changed.
 
@@ -32,8 +32,9 @@ In C, `const` is a type qualifier that is used to specify that a variable's valu
 
 The reassignment of `c` to `X` in the following code is not allowed!
 
-Experiment #1
-```c
+## Experiment #1
+
+```c { title = "main.c", verbatim=false }
 #include <stdio.h>
 
 int main() {
@@ -46,7 +47,7 @@ int main() {
     return 0;
 }
 ```
-```bash
+```bash { title = "output on the terminal", verbatim=false }
 ❯ gcc main.c
 main.c:6:7: error: cannot assign to variable 'c' with const-qualified type 'const volatile char'
     c = 'X';
@@ -57,14 +58,10 @@ main.c:4:25: note: variable 'c' declared const here
 1 error generated.
 ```
 
-So, a **`const`** variable cannot be modified?
+So, a **`const`** variable cannot be modified? What do you think the output of the following code will be?
 
-## Now try this
-
-What do you think the output of the following code will be?
-
-Experiment #2
-```c
+## Experiment #2
+```c { title = "main.c", verbatim=false }
 #include <stdio.h>
 
 int main() {
@@ -82,9 +79,7 @@ int main() {
 }
 ```
 
-This code will compile with no problems. When I compile and run it, I see the following -
-
-```bash
+```bash { title = "output on the terminal", verbatim=false }
 ❯ gcc main.c
 ❯ ./a.out
  &c: 0x16f82701b |    c: A
@@ -110,13 +105,13 @@ We used the power of pointers to manipulate the memory directly. The location at
 
 The difference between `Experiment #1` and `Experiment #2` is that in the former we asked the compiler to modify the variable and in the latter, we modified it ourselves (using a pointer)!
 
-**✅ `const` is a way to tell the compiler to only generate load instructions to interact with the variable. The compiler refuses to generate store instructions that are needed to be able to modify the variable.**
+> `const` is a way to tell the compiler to only generate load instructions to interact with the variable. The compiler refuses to generate store instructions that are needed to be able to modify the variable.
 
 By this logic, the variable is supposed to be read-only and thus behave as if it is a constant!
 
 Again, when we go the pointer way, the compiler has no problem generating instructions for the pointer dereference. Accessing the memory, fetching the values, and issuing writes to it is no problem!
 
-**❗ Pointers can be used to attempt a modification of const variable!**
+> Pointers can be used to attempt a modification of const variable!
 
 ## Conclusion
 
@@ -128,9 +123,9 @@ It does not mean in any way that the variable's value will be constant! It is no
 
 ## More food for thought
 
-Remove the volatile qualifier from the code in Experiment #2, compile, and rerun.
+Remove the volatile qualifier from the code in [Experiment #2](#experiment-2), compile, and rerun.
 
-```c
+```c { title = "main.c", verbatim=false }
 #include <stdio.h>
 
 int main() {
@@ -147,13 +142,11 @@ int main() {
     return 0;
 }
 ```
-
-Why is the same memory location having two different values in the output below?
-
-```bash
+```bash { title = "output on the terminal", verbatim=false }
 ❯ gcc main.c
 ❯ ./a.out
  &c: 0x16cf6f37b |    c: A
  &c: 0x16cf6f37b |    c: A
 ptr: 0x16cf6f37b | *ptr: X
 ```
+Why is the same memory location having two different values in the output below?

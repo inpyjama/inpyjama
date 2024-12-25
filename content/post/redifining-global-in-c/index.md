@@ -28,8 +28,7 @@ This post explores how redefinition of a symbol may be possible when using the C
 
 Redefining a global variable is not allowed in C. For the most part this statement is right. Compiling the following will fail because a is redefined as a `float`, after having defined as an `int`.
 
-`main.c`
-```c
+```c { title="main.c" verbatim=false}
 #include <stdio.h>
 
 int a;
@@ -43,9 +42,7 @@ int main() {
 }
 ```
 
-Compiler throws the following error -
-
-```bash
+```bash { title="output of the compiler" verbatim=false}
 ❯ gcc main.c -o main
 main.c:4:7: error: redefinition of 'a' with a different type: 'float' vs 'int'
 float a = 1.0;
@@ -66,13 +63,11 @@ The compiler complains about redefinition of `a`. So, `a` cannot be redefined? �
 
 Move declaration of `a` as an `int` in another `.c` file. And retain the `main.c` as below -
 
-`external.c`
-```c
+```c { title="external.c" verbatim=false}
 int a;
 ```
 
-`main.c`
-```c
+```c { title="main.c" verbatim=false}
 #include <stdio.h>
 
 float a = 1.0;
@@ -84,9 +79,7 @@ int main() {
   return 0;
 }
 ```
-
-Compile both the files.
-```bash
+```bash { title="compiling both files" verbatim=false}
 ❯ gcc external.c main.c -o main
 main.c:6:30: warning: format specifies type 'int' but the argument has type 'float' [-Wformat]
   printf("int? - a = %d\n", a);
@@ -98,8 +91,7 @@ warning? No error? Yes. It generated the binary. 😱
 
 ## And it works! 🤯
 
-`output`
-```c
+```c { title="output on executing the binary" verbatim=false}
 ❯ ./main
 int? - a = 0
 float? - a = 1.000000
@@ -107,7 +99,7 @@ float? - a = 1.000000
 
 ![](2.gif)
 
-## Weak vs Strong Symbols
+# Weak vs Strong Symbols
 
 The quick answer is - float a is strong definition compared to int a! The linker picks float a as the final definition.
 
@@ -116,7 +108,7 @@ The quick answer is - float a is strong definition compared to int a! The linker
 A weak symbol can have multiple definitions, each associated with a different object file or library. When multiple definitions of a weak symbol are encountered during linking, the linker will select one definition to use, typically based on a priority order. The selected definition becomes the final definition of the symbol, and any references to that symbol will use that definition (as in the image below).
 
 `How the compiler processes the redefinition of symbols.`
-![](3.jpg)
+![](3.jpg "fig 1. At the linking stage, the linker picks the strong symbol and discards the weaker one. A definition with assignment is considered stronger.")
 
 > 👉 Assigning a value of `1.0` to a in `float a = 1.0` makes the definition a strong definition! The compiler then enforces that a be treated as a `float` variable!
 

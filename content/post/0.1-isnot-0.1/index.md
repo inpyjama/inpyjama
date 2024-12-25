@@ -24,11 +24,11 @@ images = ["/post/0.1-isnot-0.1/1.webp"]
 Computers can't store `0.1` accurately. It is stored as `0.1000000015`! In this post we explore and take a look at what is really going on.
 <!--more-->
 
-![](1.webp)
+![](1.webp "fig 1. computers cannot accurately store the value 1.0")
 
-Don't trust me? Dont have to. Compile and run the following C code
+Don't trust me? Don't have to. Compile and run the following C code. Assuming the code above is saved in `main.c`, you can compile and run the compiled code as shown below -
 
-```c
+```c { title = "main.c", verbatim=false }
 #include <stdio.h>
 
 void main() {
@@ -37,10 +37,7 @@ void main() {
   printf("value: %0.10f\n", value);
 }
 ```
-
-Assuming the code above is saved in main.c, you can compile and run the compiled code as shown below -
-
-```bash
+```bash { title = "output on the terminal", verbatim=false }
 ~/
 ❯ gcc main.c
 
@@ -55,7 +52,7 @@ Computers don't store 0.1 as 0.1? That is correct!
 
 Try another experiment. Compile and run the following -
 
-```c
+```c { title = "main.c", verbatim=false }
 #include <stdio.h>
 
 void main() {
@@ -65,13 +62,9 @@ void main() {
   printf("In Hex: 0x%x\n", *(unsigned int *)&value);
 }
 ```
-
-I see the following output.
-```bash
+```bash { title = "output on the terminal", verbatim=false }
 ~/
 ❯ gcc main.c
-
-~/
 ❯ ./a.out
 value: 0.1000000015
 In Hex: 0x3dcccccd
@@ -79,7 +72,9 @@ In Hex: 0x3dcccccd
 
 ![](2.gif)
 
-### Say hello to - IEEE 754 floating-point format :)
+## Whats going on?
+
+> Say hello to - IEEE 754 floating-point format :)
 
 A floating-point number is typically represented using the **`IEEE 754`** standard for **single-precision floating-point** format. This format uses 32 bits (or 4 bytes) of memory to represent a floating-point number.
 
@@ -89,9 +84,9 @@ The exponent is an `8-bit` field that represents the magnitude of the number. It
 
 The mantissa is a `23-bit` field that represents the significant digits of the number. It includes the fractional part of the number and is used to store the precision of the number.
 
-![](3.jpg)
+![](3.jpg "fig 2. IEE754 based interpretation of the 32 bits as a floating point number.")
 
-**❗ Notice that the fractional part is `xxx..` in `1.xxx...` and that, every number is reduced to `1.something` and the exponent is adjust accordingly.**
+> Notice that the fractional part is `xxx..` in `1.xxx...` and that, every number is reduced to `1.something` and the exponent is adjust accordingly.
 
 ## Back to `0x3dcccccd`
 
@@ -101,7 +96,7 @@ The mantissa is a `23-bit` field that represents the significant digits of the n
 
 Breaking this down, we can see that:
 
-![](4.jpg)
+![](4.jpg "fig 3. Computing the floating point value based on the IEEE754 format.")
 
 - The sign bit is `0`, which means that the first bit is `0`.
 - The exponent is `01111011`, which represents `123` in decimal. Adding the bias of `127` gives us an exponent of `-4`.

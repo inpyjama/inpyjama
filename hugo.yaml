@@ -130,3 +130,7 @@ menus:
 taxonomies:
   series: "series"
   tags: "tags"
+
+services:
+  googleAnalytics:
+    id: G-S6DGGC65PT
