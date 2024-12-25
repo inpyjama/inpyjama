@@ -24,7 +24,7 @@ images = ["/post/hardware-development-using-fpga/1.webp"]
 Hardware development flow using the open-source toolchain for synthesis, place-n-route, and programming of ice40 FPGA. We use Blinky as an example to guide the discussion.
 <!--more-->
 
-![](1.webp)
+![](1.webp "fig 1. the Lattice iceStick FPGA board")
 
 I assume you already know about FPGAs if you are reading this. For those who have no clue what it is, imagine it to be a hardware equivalent of `Lego blocks` that can be programmed.
 
@@ -32,11 +32,11 @@ FPGAs do not have processor-like machinery. They do not have any instruction set
 
 To guide the discussion we will use the `iCE40` FPGA from Lattice and the associated open-source toolchain (`project icestorm`) to program it.
 
-!["iCE40 FPGA, D1-D5 are five LEDs that we want to blink. This development board is referred to as the "iCEstick"."](2.png)
+![](2.png "fig 2. iCE40 FPGA, D1-D5 are five LEDs that we want to blink. This development board is referred to as the `iCEstick`.")
 
 Some clarification before we move on -
 
-> 👉 Blinky circuit in the hardware world is equivalent to the *Hello, World!* in the software world!
+> Blinky circuit in the hardware world is equivalent to the *Hello, World!* in the software world!
 
 Our goal is to blink the Green and Red LEDs (`D1` - `D5`) on the [Lattice iCEstick](http://www.mouser.in/new/Lattice-Semiconductor/lattice-icestick-kit/?ref=inpyjama.com) and in doing so, explore the hardware development flow.
 
@@ -49,13 +49,13 @@ From the manual of the Lattice iCEstick board, we have the following pin mapping
 
 From the manual of the [Lattice iCEstick](http://www.mouser.in/new/Lattice-Semiconductor/lattice-icestick-kit/?ref=inpyjama.com) board, we have the following pin mapping available to us -
 
-!["Pin mapping of the LEDs."](3.png)
+![](3.png "fig 3. Pin mapping of the LEDs.")
 
 ## Development Flow
 
 The Verilog-based description needs to be converted into a stream of `0s` and `1s` that the FPGA can use to reconfigure itself. Each FPGA provider has an associated toolchain. In our case, we use the open-source toolchain. This toolchain includes a Verilog to netlist converter, netlist to place and route, generation of the binary file, and utilities to load binary on the FPGA. As below -
 
-!["Development Flow"](4.jpg)
+![](4.jpg "fig 4. Development Flow")
 
 - We feed .v file into the yosys which shall do verilog synthesis for us to produce .blif file. This file represents the described circuit in a format that can be consumed by the place and route tool.
 - Then we feed .blif and .pcf files to arachne-pnr to produce a .asc file. Arachne-pnr is the place and route tool. It lays out the structure of how the various blocks within FPGA will be connected to realize the circuit. The .asc file is the ASCII output of the placement and routing plan. It holds information about which Logic Blocks connect to one another and which Switching Box is used.
@@ -66,7 +66,7 @@ The Verilog-based description needs to be converted into a stream of `0s` and `1
 
 Let us now describe the blinky hardware to blink the LEDs on the board. We will use the input clock on the FPGA as a way to add delays between the On/Off of the LEDs. We essentially will build a counter that counts the clock cycles.
 
-> ❗ The input clock on the FPGA is fed through the physical pin #21 on the FPGA chip. This information is fed in as part of the .pcf file later.
+> The input clock on the FPGA is fed through the physical pin #21 on the FPGA chip. This information is fed in as part of the .pcf file later.
 
 ## Install dependencies
 Folks in the open-source community have taken the time and effort to reverse-engineer the bit-stream format (more on this in a while) of the lattice iCE40 FPGA series (Read more about the entire project IceStorm here).
@@ -75,7 +75,7 @@ To install the toolchain you have to be on a Linux machine (You can also do this
 
 To install the dependencies, open a terminal and execute the following on the prompt. On a Linux system use the following -
 
-```bash
+```bash {title="Linux: dependencies to be installed."}
 sudo apt install build-essential clang bison flex libreadline-dev \
                      gawk tcl-dev libffi-dev git mercurial graphviz \
                      xdot pkg-config python3 libftdi-dev
@@ -83,7 +83,7 @@ sudo apt install build-essential clang bison flex libreadline-dev \
 
 On macOS, use the following -
 
-```bash
+```bash {title="MacOS: dependencies to be installed."}
 brew install bison flex gawk graphviz xdot pkg-config python3
 ```
 
@@ -97,7 +97,7 @@ We would now want to get the toolchain! Use the following to build it from the s
 
 These utilities help us convert between file formats and program the FPGA.
 
-```bash
+```bash {title="Commands to download the source and install the **icestorm** tools" verbatim=false}
 git clone https://github.com/cliffordwolf/icestorm.git icestorm
 cd icestorm
 make -j$(nproc)
@@ -108,7 +108,7 @@ sudo make install
 
 `arachne-pnr` is the place and route tool. Given a netlist, this tool figures out how to map that to the resources on the FPGA.
 
-```bash
+```bash {title="Commands to download the source and install **arachne-pnr**" verbatim=false}
 git clone https://github.com/cseed/arachne-pnr.git arachne-pnr
 cd arachne-pnr
 make -j$(nproc)
@@ -119,7 +119,7 @@ sudo make install
 
 `yosys` is the open-source synthesis tool. It can process the hardware description language like Verilog and System Verilog and convert it to a netlist. The netlist is then consumed by the place and route tool.
 
-```bash
+```bash {title="Commands to download the source and install **yosys**" verbatim=false}
 git clone https://github.com/cliffordwolf/yosys.git yosys
 cd yosys
 make -j$(nproc)
@@ -127,9 +127,9 @@ sudo make install
 ```
 
 ## The Blinky circuit
-Create three files - Makefile, blinky.v and blink.pcf. These are normal text files and you can use any editor of your choice to edit these. Populate the files with the content below -
+Create three files - `Makefile`, `blinky.v` and `blink.pcf`. These are normal text files and you can use any editor of your choice to edit these. Populate the files with the content below -
 
-```verilog
+```verilog  {title="blinky.v" verbatim=false}
 module led_glow(clock, green_led, red_led);
     input  clock;
     output green_led;
@@ -157,7 +157,7 @@ endmodule
 
 To track the counting we use the counter register and to track the state of Green LED we use the on register! Note how the state of the Red LEDs is opposite of the Green LED.
 
-```bash
+```bash {title="blinky.pcf" verbatim=false}
 set_io clock       21
 set_io green_led   95
 set_io red_led[0]  96
@@ -168,10 +168,9 @@ set_io red_led[3]  99
 
 The `.pcf` file captures the pin constraints. We map the inputs and outputs of the module to the physical pins on the FPGA.  `Pin 21` is where the onboard clock is connected and `Pin 95-99` are connected to the LEDs (Green LED is on `95`).
 
-!["The Digital circuit and its mapping on the FPGA"](5.jpg)
+![](5.jpg "fig 5. The Digital circuit and its mapping on the FPGA.")
 
-`Makefile`
-```makefile
+```makefile {title="Makefile" verbatim=false}
 PROJECT=blinky
 
 $(PROJECT).bin: *.pcf *.v
@@ -189,7 +188,7 @@ clean:
 
 The `Makefile` is a matter of pure convenience and is used for automation. If not used, we'll need to execute the following commands one at a time, manually!
 
-```shell
+```shell {title="manual commands" verbatim=false}
 $ yosys -q -p "synth_ice40 -blif blinky.blif" blinky.v
 $ arachne-pnr -p blinky.pcf blinky.blif -o blinky.asc
 $ icepack blinky.asc blinky.bin
@@ -202,13 +201,13 @@ If using the `Makefile`, we don't have to execute these manually!
 
 Issuing a `make` on the terminal fires the synthesis, place-and-route, and binary generation tools as in the image below -
 
-![](6.png)
+![](6.png "Output of the make command")
 
 ## Programming the FPGA
 
 The `blinky.bin` is the bit-stream that we want to upload to the FPGA. It has all the information for the FPGA to internally connect its resources. Issuing a `make prog` will trigger the upload of the binary. As in the image below, `iceprog` utility will talk to the FPGA and upload the binary.
 
-![](7.png)
+![](7.png "Output of the make prog command")
 
 Congrats, you just programmed an FPGA from the ground up :)
 
@@ -216,7 +215,7 @@ Congrats, you just programmed an FPGA from the ground up :)
 
 Linux on its own doesn't allow the user to access the hardware directly. You need something called "super user" permissions. In order that you can program the FPGA without having to switch to the super user mode add the following line -
 
-```bash
+```bash {title="config to access the FPGA without sudo command" verbatim=false}
 ACTION=="add", ATTR{idVendor}=="0403", ATTR{idProduct}=="6010", MODE:="666"
 ```
 

@@ -25,7 +25,7 @@ images = ["/post/function-pointer/1.webp"]
 In this post, we explore what a function pointer is, what it really means for the machine, how to define it, and how to use it.
 <!--more-->
 
-![](1.webp)
+![](1.webp "fig 1. The kernel code registers function pointers with the kernel code that it can later invoke.")
 
 Function pointers are pointers that point to code. When these are dereferenced, the fetched data is treated like instructions and the CPU executes them.
 
@@ -55,13 +55,13 @@ The output should be - `Hello, World!`. What happened here was, the `fptr` varia
 
 Hopefully, you are convinced how a function pointer works. Now let's look at some more details and use cases.
 
-![](3.png)
+![](3.png "fig 3. Annotated screenshot of the locally run example.")
 
 # The Syntax
 
 The general syntax is `return type (* function pointer name)(parameter list)`. The function/code being pointed to should have the same return type and parameters. For example, the snippets below add has the same return types and parameter list as fn.
 
-![](4.jpg)
+![](4.jpg "fig 4. The function pointer declaration syntax.")
 
 ## Without `typedef`
 
@@ -81,7 +81,7 @@ int main() {
 }
 ```
 
-![](5.png)
+![](5.png "fig 5. An example of invoking a function pointer.")
 
 ## With `typedef`
 
@@ -103,7 +103,7 @@ int main() {
 }
 ```
 
-![](6.png)
+![](6.png "fig 6. Assigning and calling a function pointer.")
 
 # When to use function pointers?
 
@@ -117,7 +117,7 @@ Let's recall how software abstraction works -
 
 If this looks right, the next question we should ask is - **what happens if a library function depends on a procedure to be supplied by the user?** In such a case, we have an option between not creating the library and letting the user write the full function (which is bad) or providing a way for the user to pass the function/procedure to be executed to the library function - this is where we use function pointers!
 
-![](7.jpg)
+![](7.jpg "fig 7. The kernel code registers function pointers with the kernel code that it can later invoke.")
 
 > When a function takes as a parameter a function pointer, the function pointer is called the Callback function.
 
@@ -131,7 +131,7 @@ Such design philosophy is used in Event Driven programs and message passing. In 
 
 Say, a device driver code does something like so - `register_interrupt_handler(49, irq_49_handler);`. Meaning that, if the interrupt handler library detected that interrupt `49` has occurred, it should call the function `irq_49_handler()`. This is also depicted in the image below -
 
-![](8.jpg)
+![](8.jpg "fig 8. Typical use of function pointers as callback functions. In this case, the `irq_49_handler()` function is registered with the kernel to be called when the interrupt `49` is fired.")
 
 Notice that, the interrupt management library, once any interrupt occurs, just reads the interrupt number and then calls the corresponding registered function pointer - the interrupt handler. After the handler execution is complete, it clears the interrupt. The key is -
 
