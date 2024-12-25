@@ -6,6 +6,7 @@
         <div class="col-8 content">
           {{ with .Title }}
             <h1 class=" fw-bold text-center text-primary pb-2 post-heading">{{ . }}</h1>
+            <br>
           {{ end }}
 
           {{ with .Params.description }}
@@ -60,6 +61,7 @@
             {{ .Content }}
 
           </div>
+          <hr>
         </div>
         <div class="col-4">
         {{ with . }}{{ partial "utilities/book.html" . }}{{ end }}
@@ -86,8 +88,6 @@
         {{ end }}
       </div>
       </div> -->
-
-      <hr>
 
       <div class="row justify-content-center">
         <div class="col-8 d-flex justify-content-center content">
