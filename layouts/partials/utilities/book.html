@@ -5,8 +5,8 @@
         Read online for FREE!
       </h4>
     </div>
-    <div class="aspect-ratio-62-5">
-      <img class="" src="https://imgproxy.learnyst.com/learnyst-user-assets/school-assets/schools/172620/courses/202815/1724682161393arm_m__2__lyst1724682161401.png">
+    <div class="aspect-ratio-62-5 zoom-img">
+      <img src="https://imgproxy.learnyst.com/learnyst-user-assets/school-assets/schools/172620/courses/202815/1724682161393arm_m__2__lyst1724682161401.png">
     </div>
     <div class="card-body">
       <h4>C Ninja, in Pyjama!</h4>
@@ -26,12 +26,28 @@
   .book {
     position: sticky;
     top: 200px;
-    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
     transition: box-shadow 0.5s;
   }
 
   .book:hover {
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
+  }
+
+  .zoom-img {
+    height:auto;
+    scale: 1;
+    overflow: hidden;
+
+  }
+
+  .zoom-img  img {
+    width: 100%;
+    transition: all .3s ease-in-out;
+  }
+
+  .zoom-img img:hover   {
+    transform: scale(1.2);
   }
   </style>
 {{ end }}
