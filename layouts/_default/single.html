@@ -12,43 +12,50 @@
             <p class="text-black-61 text-center pb-3">{{ . }}</p>
           {{ end }}
 
-          <div class="post-author">
-            {{ with .Params }}
-
-            {{ if .author }}
-            <a class="author-link" href="{{ .preferred }}" target="_blank">
+          {{ with .Params }}
+          <table class="row publishing-details">
+            <tr>
+            <td>
+              <a href="{{ .preferred }}" target="_blank">
               {{ if .authorImage }}<img class="author-image" src="/images/{{ .authorImage }}"/> {{ end }}
-              <b>{{ .author }} </b></a> |
-            {{ end }}
+            </a>
+            </td>
+            <td>
+              <div class="post-author">
+              {{ if .author }}
+                <a class="author-link" href="{{ .preferred }}" target="_blank">
+                <b>{{ .author }} </b></a> |
+              {{ end }}
 
-            {{ if .blog }}
-            <a href="https://{{ .blog }}" target="_blank"><span class="bi bi-globe2"></span></a>&nbsp;
-            {{ end }}
+              {{ if .blog }}
+                <a href="https://{{ .blog }}" target="_blank"><span class="bi bi-globe2"></span></a>&nbsp;
+              {{ end }}
 
-            {{ if .email }}
-            <a href="mailto:{{ .email }}" target="_blank"><span class="bi bi-envelope"></span></a>&nbsp;
-            {{ end }}
+              {{ if .email }}
+                <a href="mailto:{{ .email }}" target="_blank"><span class="bi bi-envelope"></span></a>&nbsp;
+              {{ end }}
 
-            {{ if .linkedin }}
-            <a href="{{ .linkedin }}" target="_blank"><span class="bi bi-linkedin"></span></a>&nbsp;
-            {{ end }}
+              {{ if .linkedin }}
+                <a href="{{ .linkedin }}" target="_blank"><span class="bi bi-linkedin"></span></a>&nbsp;
+              {{ end }}
 
-            {{ if .twitter }}
-            <a href="{{ .twitter }}" target="_blank"><span class="bi bi-twitter-x"></span></a>&nbsp;
-            {{ end }}
-
-            {{ with .date }}
-            <br>
-            {{ $t := . }}
-            {{ $t = time.AsTime $t }}
-            {{ $format := "2 Jan, 2006" }}
-            <b> {{ $t.Format $format }} </b>
-
-            <br><br>
+              {{ if .twitter }}
+                <a href="{{ .twitter }}" target="_blank"><span class="bi bi-twitter-x"></span></a>&nbsp;
+              {{ end }}
+              </div>
+              <div class="post-author">
+              {{ with .date }}
+                {{ $t := . }}
+                {{ $t = time.AsTime $t }}
+                {{ $format := "2 Jan, 2006" }}
+                <b> {{ $t.Format $format }} </b>
+              {{ end }}
+              </div>
+            </td>
+          </tr>
+          </table>
           {{ end }}
-          {{ end }}
-          </div>
-
+          <!-- <br><br> -->
           <div class="blog-content fs-5">
             {{ .Content }}
 
@@ -107,7 +114,9 @@
 
     .post-author {
       align-items: left;
-      display: inline;
+      padding: 0px;
+      margin: 0px;
+      margin-left: 10px;
     }
 
     .author-link {
@@ -115,8 +124,14 @@
     }
 
     .author-image {
-      max-height: 1em;
+      max-height: 50px;
       border-radius: 50%;
+      margin:0px;
+      padding:0px;
+    }
+
+    .publishing-details {
+      margin-bottom: 1em;
     }
 
     @media only screen and (max-width: 1024px) {
