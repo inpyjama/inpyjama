@@ -3,7 +3,7 @@ title = 'CPUs, Pantries, and Caches'
 date = "2023-04-30"
 
 author = "Mahmad Bharmal"
-authorImage =""
+authorImage ="teams/mahmad.jpeg"
 preferred = ""
 linkedin = ""
 twitter = ""

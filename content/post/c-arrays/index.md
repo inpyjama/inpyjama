@@ -3,6 +3,7 @@ date  = "2024-08-11"
 title = 'C Arrays, behind the scene !!'
 
 author = "Dev Bishnoi"
+authorImage ="teams/dev.jpg"
 
 tags = [
     "caches", "cpu"

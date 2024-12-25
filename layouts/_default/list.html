@@ -23,6 +23,49 @@
             <div class="card-body">
               <h5 class="card-title fw-semibold">{{ .Title }}</h5>
               <p class="card-text text-black-61">{{ .Summary | plainify }}</p>
+              {{ with .Params }}
+              <table class="row">
+                <tr>
+                <td>
+                  <a href="{{ .preferred }}" target="_blank">
+                  {{ if .authorImage }}<img class="card-author-image" src="/images/{{ .authorImage }}"/> {{ end }}
+                </a>
+                </td>
+                <td>
+                  <div class="post-author">
+                  {{ if .author }}
+                    <a class="author-link" href="{{ .preferred }}" target="_blank">
+                    <b>{{ .author }} </b></a> |
+                  {{ end }}
+
+                  {{ if .blog }}
+                    <a href="https://{{ .blog }}" target="_blank"><span class="bi bi-globe2"></span></a>&nbsp;
+                  {{ end }}
+
+                  {{ if .email }}
+                    <a href="mailto:{{ .email }}" target="_blank"><span class="bi bi-envelope"></span></a>&nbsp;
+                  {{ end }}
+
+                  {{ if .linkedin }}
+                    <a href="{{ .linkedin }}" target="_blank"><span class="bi bi-linkedin"></span></a>&nbsp;
+                  {{ end }}
+
+                  {{ if .twitter }}
+                    <a href="{{ .twitter }}" target="_blank"><span class="bi bi-twitter-x"></span></a>&nbsp;
+                  {{ end }}
+                  </div>
+                  <div class="post-author">
+                  {{ with .date }}
+                    {{ $t := . }}
+                    {{ $t = time.AsTime $t }}
+                    {{ $format := "2 Jan, 2006" }}
+                    <b> {{ $t.Format $format }} </b>
+                  {{ end }}
+                  </div>
+                </td>
+              </tr>
+              </table>
+              {{ end }}
             </div>
           </a>
         </div>
@@ -33,4 +76,21 @@
       </div>
     </div>
   </section>
+  <style>
+    .post-author {
+      align-items: left;
+      margin-left: 10px;
+    }
+
+    .author-link {
+      text-decoration: none !important;
+    }
+
+    .card-author-image {
+      max-height: 50px;
+      border-radius: 50%;
+      /* margin:0px;
+      padding:0px; */
+    }
+  </style>
 {{ end }}
