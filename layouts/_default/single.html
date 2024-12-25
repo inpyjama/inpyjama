@@ -61,6 +61,9 @@
 
           </div>
         </div>
+        <div class="col-4">
+        {{ with . }}{{ partial "utilities/book.html" . }}{{ end }}
+        </div>
       </div>
 
       <!-- TODO: clean this up and enable -->
@@ -144,6 +147,11 @@
 
       .col-8 {
         width: 100%;
+      }
+
+      .col-4 {
+        width: 100%;
+        padding: 10px;
       }
 
       h1 {

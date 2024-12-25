@@ -1,0 +1,37 @@
+{{ with .}}
+  <a class="card text-decoration-none book" href="https://engineers.inpyjama.com/learn/c-ninja-book" target="_blank">
+    <div class="card-body text-center">
+      <h4 class="card-title text-primary course-title">
+        Read online for FREE!
+      </h4>
+    </div>
+    <div class="aspect-ratio-62-5">
+      <img class="" src="https://imgproxy.learnyst.com/learnyst-user-assets/school-assets/schools/172620/courses/202815/1724682161393arm_m__2__lyst1724682161401.png">
+    </div>
+    <div class="card-body">
+      <h4>C Ninja, in Pyjama!</h4>
+      <p class="card-text text-black-61">
+        We have been working on this book for about 2 years. This covers everything from ISA, Assembly programming, Linker Script, Build tools, C and programming CPUs from scratch.
+        <br><br>
+        The book is not complete yet, but the public draft is available for online reading.
+      </p>
+      <div class="btn btn-outline-primary">
+        <b>Read for FREE</b>
+        <span class="bi bi-arrow-up-right">&nbsp</span>
+      </div>
+    </div>
+  </a>
+
+  <style>
+  .book {
+    position: sticky;
+    top: 200px;
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.5s;
+  }
+
+  .book:hover {
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  }
+  </style>
+{{ end }}
