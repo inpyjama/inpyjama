@@ -4,3 +4,4 @@
 [submodule "content/post"]
 	path = content/post
 	url = https://github.com/inpyjama/posts.git
+	branch = main
