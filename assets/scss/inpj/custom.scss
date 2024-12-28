@@ -1,0 +1,114 @@
+// hero.html
+.typed-bold {
+  color: red;
+}
+
+// offers.html
+.offers {
+  padding: 1em;
+  background-color: #03346E;
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+  font-size: 1.25em;
+}
+
+// list.html
+.post-author {
+  align-items: left;
+  margin-left: 10px;
+}
+
+.author-link {
+  text-decoration: none !important;
+}
+
+.card-author-image {
+  max-height: 50px;
+  border-radius: 50%;
+  /* margin:0px;
+  padding:0px; */
+}
+
+// single.html
+.content {
+  top:0px;
+  padding: 3em;
+  margin: 0px;
+}
+
+.post-heading {
+  margin: 0px;
+}
+
+.post-author {
+  align-items: left;
+  padding: 0px;
+  margin: 0px;
+  margin-left: 10px;
+}
+
+.author-link {
+  text-decoration: none !important;
+}
+
+.author-image {
+  max-height: 50px;
+  border-radius: 50%;
+  margin:0px;
+  padding:0px;
+}
+
+.publishing-details {
+  margin-bottom: 1em;
+}
+
+@media only screen and (max-width: 1024px) {
+  .content {
+  top:0px;
+  padding: 0.4rem;
+  border-radius: 0px;
+  margin: 0px;
+  }
+
+  .col-8 {
+    width: 100%;
+  }
+
+  .col-4 {
+    width: 100%;
+    padding: 10px;
+  }
+
+  h1 {
+    margin-bottom: 0.25em !important;
+  }
+}
+
+// book.html
+.book {
+  position: sticky;
+  top: 200px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.5s;
+}
+
+.book:hover {
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
+}
+
+.zoom-img {
+  height:auto;
+  scale: 1;
+  overflow: hidden;
+
+}
+
+.zoom-img  img {
+  width: 100%;
+  transition: all .3s ease-in-out;
+}
+
+.zoom-img img:hover   {
+  transform: scale(1.2);
+}
