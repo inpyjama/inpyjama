@@ -2,7 +2,6 @@
   <section class="section blog-single py-5">
     <div class="container">
       <div class="row justify-content-center">
-
         <div class="col-8 content">
           {{ with .Title }}
             <h1 class=" fw-bold text-center text-primary pb-2 post-heading">{{ . }}</h1>
@@ -60,6 +59,25 @@
           <div class="blog-content fs-5">
             {{ .Content }}
 
+          </div>
+          <hr>
+          <!-- Related Articles -->
+          <div>
+            {{ if isset .Params "tags" }}
+              {{ $tagTitle := index .Params.tags 0 }}
+              {{ $currentLink := .Permalink }}
+                <h3>Read more:</h3>
+                    {{ range (index .Site.Taxonomies.tags ($tagTitle | urlize)).Pages.ByTitle }}
+                    <p>
+                      {{ if eq $currentLink .Permalink }}
+                      {{ else }}
+                        <a href="{{ .Permalink }}">
+                          {{ .Title }}
+                        </a>
+                      {{ end }}
+                    </p>
+                    {{ end }}
+              {{ end }}
           </div>
           <hr>
         </div>
