@@ -1,6 +1,7 @@
 +++
 title = "About Us"
 description = "Lowering the barrier to learning Embedded System"
+type = "plain"
 +++
 
 We curate content on Embedded Systems to help our readers (beginners or professionals) become better engineers and grow as a professional (anxiety-free). Topics include -

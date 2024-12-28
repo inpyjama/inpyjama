@@ -1,6 +1,7 @@
 +++
 title = "Cancellation and Refund Policy"
 description = "Cancellation and Refund Policy"
+type = "plain"
 +++
 
 Thank you for shopping at engineers.inpyjama.com/learn

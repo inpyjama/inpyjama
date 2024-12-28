@@ -1,6 +1,7 @@
 +++
 title = "Disclaimer"
 description = "Interpretation and Definitions"
+type = "plain"
 +++
 
 ## Interpretation

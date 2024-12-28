@@ -48,13 +48,13 @@ params:
 
 # Add offer details to show as a banner on the website
   offer:
-    active: false
+    active: true
     message: ""
     product: "Firmware Engineeer's Arsenal"
     link: "https://engineers.inpyjama.com/learn/fw-arsenal"
     discount: 40
-    code: "HEYRAM40"
-    expiry: "Dec 3, 2024 23:59:59"
+    code: "MD50"
+    expiry: "Dec 31, 2024 23:59:59"
 
 menus:
   main:

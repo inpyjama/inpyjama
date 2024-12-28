@@ -1,6 +1,7 @@
 +++
 title = "Privacy Policy"
 description = "Privacy Policy"
+type = "plain"
 +++
 
 This Privacy Policy (the “Policy”) governs the manner in which the Platform collects, uses, maintains and discloses information of its users. The Policy also describes the practices that We apply to such user information, user’s privacy rights and choices regarding their information. To clarify, this Policy applies to all users of the Platform (referred to as “Learners”, “You”, “Your”).
