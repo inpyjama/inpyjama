@@ -1,3 +1,6 @@
 [submodule "themes/up-business-theme"]
 	path = themes/up-business-theme
 	url = https://gitlab.com/writeonlyhugo/up-business-theme.git
+[submodule "content/post"]
+	path = content/post
+	url = https://github.com/inpyjama/posts.git
