@@ -50,9 +50,9 @@ params:
   offer:
     active: true
     message: ""
-    product: "Firmware Engineeer's Arsenal"
+    product: "Firmware Engineer's Arsenal"
     link: "https://engineers.inpyjama.com/learn/fw-arsenal"
-    discount: 40
+    discount: 50
     code: "MD50"
     expiry: "Dec 31, 2024 23:59:59"
 
