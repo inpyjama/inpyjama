@@ -113,16 +113,17 @@
   transform: scale(1.2);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .row {
-    scale: 0.6;
-    opacity: 0;
-    animation: fade-in linear forwards;
-    animation-timeline: view();
-    animation-range: entry;
-  }
+// Disable animation
+// @media (prefers-reduced-motion: no-preference) {
+//   .row {
+//     scale: 0.6;
+//     opacity: 0;
+//     animation: fade-in linear forwards;
+//     animation-timeline: view();
+//     animation-range: entry;
+//   }
 
-  @keyframes fade-in {
-    to { scale: 1; opacity: 1; }
-  }
-}
+//   @keyframes fade-in {
+//     to { scale: 1; opacity: 1; }
+//   }
+// }
