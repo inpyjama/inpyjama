@@ -20,11 +20,6 @@ content:
     url: "https://sendfox.com/inpyjama"
 
   list:
-      - member: "Piyush Itankar"
-        image: "images/teams/piyush.jpg"
-        text: "Electrical Engineer by Education, went on to pursuing masters in Embedded Systems. Has worked at **Intel** on Navigation Firmware, Bluetooth Driver and RF validation software. Currently working as a Embedded Software Engineer at **Google**. Has been involved with Firmware development for the Power Management Sub-system on the Tensor SoCs (Pixel Phones) and Pixel Watch System software."
-        linkedin: "https://www.linkedin.com/in/streetdogg/"
-
       - member: "Dev Bishnoi"
         image: "images/teams/dev.jpg"
         text: "Computer Science student turned Embedded Systems Engineer. Started to work with AI accelerators, writing lower level code and got hooked to Embedded systems. Worked on the Pixel Phone SoC (Tensor SoC) for four years and then moved on to working on the Pixel Watch System Software."

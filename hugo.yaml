@@ -29,22 +29,22 @@ params:
   social:
     twitter: "https://x.com/inpyjama_"
     youtube: "https://www.youtube.com/@inpyjama"
-    whatsapp: "https://whatsapp.com/channel/0029VaLHkWT6buMPULyhxd1Q"
-    discord: "https://discord.com/invite/embedded-systems-party-inpyjama-1165531784293912576"
+    # whatsapp: "https://whatsapp.com/channel/0029VaLHkWT6buMPULyhxd1Q"
+    # discord: "https://discord.com/invite/embedded-systems-party-inpyjama-1165531784293912576"
     linkedin: "https://www.linkedin.com/company/103018956/"
     newsletter: "https://sendfox.com/inpyjama"
 
   location:
-    - "Keerthi Harmony, Raghevendra Circle, Bangalore - 560016"
+    - "Bangalore, India"
 
   contact:
     - "support@inpyjama.com"
     - "business@inpyjama.com"
-  phone:
-    - "+91-9108898976"
-    - "+91-9980970507"
+  # phone:
+  #   - "+91-9108898976"
+  #   - "+91-9980970507"
 
-  copyright: "© 2024, Typobrahe Education LLP. All Rights Reserved."
+  copyright: "© 2024, All Rights Reserved."
 
 # Add offer details to show as a banner on the website
   offer:
@@ -69,14 +69,14 @@ menus:
       identifier: "bi-youtube"
       url: "https://www.youtube.com/@inpyjama"
       weight: 3
-    - name: "Discord"
-      identifier: "bi-discord"
-      url: "https://discord.com/invite/embedded-systems-party-inpyjama-1165531784293912576"
-      weight: 4
-    - name: "Whatsapp"
-      identifier: "bi-whatsapp"
-      url: "https://whatsapp.com/channel/0029VaLHkWT6buMPULyhxd1Q"
-      weight: 5
+    # - name: "Discord"
+    #   identifier: "bi-discord"
+    #   url: "https://discord.com/invite/embedded-systems-party-inpyjama-1165531784293912576"
+    #   weight: 4
+    # - name: "Whatsapp"
+    #   identifier: "bi-whatsapp"
+    #   url: "https://whatsapp.com/channel/0029VaLHkWT6buMPULyhxd1Q"
+    #   weight: 5
     - name: "Courses"
       identifier: "bi-mortarboard"
       url: "https://engineers.inpyjama.com/learn"
